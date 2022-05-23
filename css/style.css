@@ -302,7 +302,7 @@ header nav .items ul li:hover {
     width: 100% !important;
 }
 
-@media screen and( max-width:800px) {
+@media only screen and( min-width:800px) {
     body {
         background: yellow;
     }
