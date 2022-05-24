@@ -224,6 +224,7 @@ header nav .items ul li:hover {
 .container .intro .projects {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .container .intro .projects .card {
@@ -336,6 +337,15 @@ header nav .items ul li:hover {
         object-fit: cover;
         width: 500px;
         border-radius: 100%;
+    }
+    .container .intro .research .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #2e3445;
+        border-radius: 10px;
+        padding: 12px;
+        margin: 1%;
     }
     p#tagline {
         width: 100%;
