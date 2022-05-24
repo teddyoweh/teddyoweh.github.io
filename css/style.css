@@ -305,11 +305,47 @@ header nav .items ul li:hover {
 
 .container .intro .research .card .desc {}
 
+.container .intro .tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.container .intro .tools .tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: #ffffff;
+    color: lightblue;
+    border-radius: 13px;
+    height: 94px;
+    width: 94px;
+    margin: 3%;
+}
+
+.container .intro .tools img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.container .intro .tools .tool strong {
+    color: #2e3445;
+}
+
 .fulltext {
     width: 100% !important;
 }
 
 @media (max-width:900px) {
+    .container .intro b {
+        font-size: 53px;
+    }
     .container .intro .projects {
         display: flex;
         flex-direction: column;
