@@ -43,6 +43,12 @@ header nav .items {
     text-transform: initial;
 }
 
+header nav .items .bar {
+    color: white;
+    font-size: 39px;
+    display: none;
+}
+
 header nav .items ul {
     display: flex;
     flex-direction: row;
@@ -302,13 +308,52 @@ header nav .items ul li:hover {
     width: 100% !important;
 }
 
-@media only screen and( min-width:800px) {
-    body {
-        background: yellow;
-    }
-    .container .intro .row .projects {
+@media (max-width:900px) {
+    .container .intro .projects {
         display: flex;
         flex-direction: column;
-        background-color: red;
+        align-items: center;
+    }
+    .container .intro .projects .card {
+        width: 78%;
+        display: flex;
+        flex-direction: column;
+        background: #2e3445;
+        border-radius: 10px;
+        padding: 12px;
+        margin: 1%;
+        margin-top: 5%;
+    }
+    .container#home .row {
+        display: flex;
+        margin-top: 42px;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .container#home .profileimg img {
+        height: 500px;
+        object-fit: cover;
+        width: 500px;
+        border-radius: 100%;
+    }
+    p#tagline {
+        width: 100%;
+    }
+    header nav {
+        padding: 28px;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* color: white; */
+        background: black;
+    }
+    header nav .items .bar {
+        display: block;
+    }
+    header nav .items ul {
+        display: none;
     }
 }
