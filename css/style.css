@@ -325,6 +325,8 @@ header nav .items ul li:hover {
     height: 94px;
     width: 94px;
     margin: 3%;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .container .intro .tools img {
@@ -332,14 +334,34 @@ header nav .items ul li:hover {
     width: 50px;
     object-fit: cover;
     padding: 10px;
+    transition: 0.3s;
+}
+
+.container .intro .tools a {
+    margin: 3%;
+}
+
+.container .intro .tool:hover img {
+    height: 81px;
+    width: 81px;
+    transition: 0.3s;
+}
+
+.container .intro .tool:hover strong {
+    color: transparent;
 }
 
 .container .intro .tools .tool strong {
     color: #2e3445;
+    width: max-content;
 }
 
 .fulltext {
     width: 100% !important;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media (max-width:900px) {
