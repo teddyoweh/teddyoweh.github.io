@@ -364,7 +364,7 @@ a {
     text-decoration: none;
 }
 
-@media (max-width:900px) {
+@media only screen and (max-width: 768px) {
     .container .intro b {
         font-size: 53px;
     }
@@ -391,9 +391,9 @@ a {
         align-items: center;
     }
     .container#home .profileimg img {
-        height: 500px;
+        height: 300px;
         object-fit: cover;
-        width: 500px;
+        width: 300px;
         border-radius: 100%;
     }
     .container .intro .research .card {
