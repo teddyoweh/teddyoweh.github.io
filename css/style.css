@@ -80,13 +80,13 @@ header nav .items ul li:hover {
 
 .container {
     margin-top: 9%;
-    padding-left: 96px;
+    padding-left: 55px;
 }
 
 .container .intro {
     display: flex;
     font-family: calibri;
-    padding: 50px;
+    padding: 50px 0px;
     flex-direction: column;
     color: white;
     width: 100%;
@@ -366,7 +366,7 @@ a {
 
 @media only screen and (max-width: 768px) {
     .container .intro b {
-        font-size: 53px;
+        font-size: 44px;
     }
     .container .intro .projects {
         display: flex;
