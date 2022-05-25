@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap');
 body {
-    margin: 0;
+    margin: 0px;
     background: black;
 }
 
@@ -364,6 +364,10 @@ a {
     text-decoration: none;
 }
 
+.container#home .intro label#tagline {
+    font-size: 25px;
+}
+
 @media only screen and (max-width: 768px) {
     .container .intro b {
         font-size: 44px;
@@ -409,7 +413,7 @@ a {
         width: 100%;
     }
     header nav {
-        padding: 28px;
+        /* padding: 28px; */
         position: sticky;
         top: 0;
         display: flex;
@@ -423,5 +427,8 @@ a {
     }
     header nav .items ul {
         display: none;
+    }
+    .container#home .intro label#tagline {
+        font-size: 19px;
     }
 }
