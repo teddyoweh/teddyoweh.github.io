@@ -16,6 +16,7 @@ header nav {
     align-items: center;
     justify-content: center;
     background: #f0f8ff9c;
+    box-shadow: 1px 1px 10px #8a979f;
 }
 
 header nav .logo {}
@@ -123,11 +124,44 @@ footer {
     padding: 32px 0px;
 }
 
-footer span {}
+footer span a {
+    color: #5494b7;
+    font-family: 'Jost';
+    letter-spacing: 1px;
+    font-weight: 800;
+}
 
-footer ul {}
+footer ul a {
+    margin: 3%;
+}
 
-footer ul li {}
+footer ul {
+    list-style: none;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li {
+    padding: 10px;
+    background: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #646c7b;
+    transition: 0.4s;
+}
+
+footer ul li:hover {
+    color: white;
+    background: #646c7b;
+    transition: 0.4s;
+}
 
 @keyframes namebox1 {
     from {
