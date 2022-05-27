@@ -23,18 +23,22 @@ header nav .logo {}
 
 header nav .logo h1 {
     font-family: Jost;
+    color: #68b2ff;
 }
 
-header nav .nav-items {}
+header nav .nav-items {
+    width: max-content;
+}
 
 header nav .nav-items ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    width: max-content;
 }
 
 header nav .nav-items ul li {
-    margin-right: 8%;
+    margin-right: 6%;
     border-radius: 10px;
     transition: 0.5s;
     padding: 5px 8px;
@@ -68,6 +72,7 @@ header nav .nav-items ul li a {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    height: 700px;
 }
 
 .container#home .home {
@@ -111,6 +116,18 @@ header nav .nav-items ul li a {
     font-weight: 600;
     color: #b2b2b2;
 }
+
+.container#about {}
+
+.container#about .about {}
+
+.container#about .about h1 {}
+
+.container#about .about p {}
+
+.container#about .profileimg {}
+
+.container#about .profileimg img {}
 
 footer {
     position: absolute;
