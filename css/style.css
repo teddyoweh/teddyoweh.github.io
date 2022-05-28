@@ -3,9 +3,14 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background: #edf2f8;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -135,7 +140,12 @@ header nav .nav-items ul li a {
     /* background: white; */
 }
 
-.container#about .about {}
+.container#about .about {
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-name: about;
+    position: relative;
+}
 
 .container#about .about h1 {
     font-family: 'Jost';
@@ -153,14 +163,24 @@ header nav .nav-items ul li a {
 }
 
 .container#about .profileimg {
+    position: relative;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-name: aboutimg;
     box-sizing: border-box;
+    /* border-style: solid; */
+    border-radius: 100%;
+    box-shadow: 0px 1px 13px #a6b4c5;
+    border-color: #a6b4c5;
+    background: transparent;
 }
 
 .container#about .profileimg img {
     height: 610px;
     width: 610px;
     object-fit: cover;
-    border-radius: 24px;
+    border-radius: 100%;
+    box-shadow: 0px 1px 19px #a6b4c5;
 }
 
 footer {
@@ -225,6 +245,28 @@ footer ul li:hover {
 
 .sticky+.content {
     padding-top: 60px;
+}
+
+@keyframes about {
+    from {
+        left: -50%;
+        opacity: 0;
+    }
+    to {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes aboutimg {
+    from {
+        right: -50%;
+        opacity: 0;
+    }
+    to {
+        right: 0%;
+        opacity: 1;
+    }
 }
 
 @keyframes namebox1 {
