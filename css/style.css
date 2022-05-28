@@ -8,15 +8,20 @@ body {
     background: #edf2f8;
 }
 
-header {}
+header {
+    /* position: fixed; */
+}
 
 header nav {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f0f8ff9c;
+    background: #edf2f8;
     box-shadow: 1px 1px 10px #8a979f;
+    /* position: fixed; */
+    width: 100%;
+    /* top: 0; */
 }
 
 header nav .logo {}
@@ -66,13 +71,17 @@ header nav .nav-items ul li a {
     flex-direction: column;
 }
 
-.container {}
+.container {
+    /* position: absolute; */
+}
 
 .container#home {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 700px;
+    height: 848px;
+    box-shadow: 1px 1px 8px #edf2f8;
+    background: #edf2f8;
 }
 
 .container#home .home {
@@ -92,7 +101,7 @@ header nav .nav-items ul li a {
     /* transform: translate(162px, 102px); */
     padding: 1rem 2rem;
     border-radius: 9px;
-    box-shadow: 1px 1px 10px #cacaca;
+    box-shadow: 1px 1px 10px #d1d6d9;
     background: white;
 }
 
@@ -109,6 +118,8 @@ header nav .nav-items ul li a {
 
 .container#home .home .namebox:nth-child(2) {
     margin-top: 10%;
+    padding: font-size;
+    font-size: 19px;
 }
 
 .container#home .home .namebox:nth-child(2) small {
@@ -117,17 +128,40 @@ header nav .nav-items ul li a {
     color: #b2b2b2;
 }
 
-.container#about {}
+.container#about {
+    display: flex;
+    flex-direction: row;
+    padding: 76px;
+    /* background: white; */
+}
 
 .container#about .about {}
 
-.container#about .about h1 {}
+.container#about .about h1 {
+    font-family: 'Jost';
+    font-size: 51px;
+    color: #748396;
+}
 
-.container#about .about p {}
+.container#about .about p {
+    font-family: system-ui;
+    ;
+    font-weight: 600;
+    color: #5c8396;
+    width: 73%;
+    font-size: 23px;
+}
 
-.container#about .profileimg {}
+.container#about .profileimg {
+    box-sizing: border-box;
+}
 
-.container#about .profileimg img {}
+.container#about .profileimg img {
+    height: 610px;
+    width: 610px;
+    object-fit: cover;
+    border-radius: 24px;
+}
 
 footer {
     position: absolute;
@@ -178,6 +212,19 @@ footer ul li:hover {
     color: white;
     background: #646c7b;
     transition: 0.4s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 60px;
 }
 
 @keyframes namebox1 {
