@@ -2,16 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>TeddyOweh</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="preloader.css">
     <link rel='icon' href=".img/logo-m.png">
+    <link rel="stylesheet" href="swipe.css">
 </head>
 
 <body>
+
+    <div class="preloadbody">
+        <div class="preloader">
+            <div class="blob-1"></div>
+            <div class="blob-2"></div>
+        </div>
+    </div>
+
+
     <header id="navbar">
         <nav>
             <div class="logo">
@@ -70,6 +83,7 @@
 
 
             <h1> About Me</h1>
+
             <p>I'm an Enthusiastic Machine Learning Developer, skilled proficiently in Python, PHP, C React.JS, and React Native. Experienced in migrating codebases with different frameworks, creating machine learning models with a variety of machine learning
                 algorithms, creating APIs/ Microservices with Python Flask Framework, and Integrating API keys. Skills in algorithm design and algorithmic problem-solving.</p>
 
@@ -78,10 +92,137 @@
         </div>
         <div class="profileimg">
             <img src="./img/ted.jpg">
+
         </div>
     </div>
+    <div class="container" id="projects">
+        <h1>Projects</h1>
+
+
+
+        <div class="projects">
+            <div class="completed">
+                <p><big>10+</big><small> Projects Completed</small></p>
+                <p>View my Projects in my Projects Overview and Source Code in my Github Repository
+                    <a href="https://github.com/teddyoweh/ ">
+
+                        <i class='bx bxl-github'></i> teddyoweh
+                    </a>
+                </p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="mycards">
+
+                            <div class="caption">
+                                <label class="title">Omarke</label>
+
+
+                                <div class="lang">
+
+
+                                    <label>
+                            
+                                         <img src="https://img.icons8.com/fluency/48/000000/python.png"/>
+                                         <img src="https://img.icons8.com/color/96/000000/visual-studio--v2.png"/>
+                                        
+                                        </label>
+
+                                </div>
+                                <p class="desc">Omark is a Python library that implements a linear search algorithm with a facial recognition module, on a database of pictures. It captures a picture of a group of people and determines who is absent from the picture,
+                                    who is present in the picture and how many people are in the picture. An implementation of this in a real-world scenario is in taking class attendances, it captures a picture of a classroom and then performs a linear
+                                    search algorithm on a database to determine which student is in class and which student isn't.</p>
+                                <div class="links">
+                                    <label>  
+                                        <a href="https://pypi.org/project/Omarke/"><i class='bx bxs-package'></i>  Package</a>
+                                            <a href="https://github.com/teddyoweh/Omark ">
+    
+                                                <i class='bx bxl-github'></i>  Source Code
+                                            </a>
+                                            
+                                        </label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mycards">
+
+                            <div class="caption">
+                                <label class="title">Pointers in python</label>
+
+
+                                <div class="lang">
+
+
+                                    <label>
+                            
+                                         <img src="https://img.icons8.com/fluency/48/000000/python.png"/>
+                                         <img src="https://img.icons8.com/color/96/000000/visual-studio--v2.png"/>
+                                        
+                                        </label>
+
+                                </div>
+                                <p class="desc">
+                                    It is widely known that there aren't Pointers in Python and there is only one way of assigning variables in python, but this project creates a new method of assigning variables in python and can be implemented in large-scale projects and make it more.
+                                    efficient-->
+                                </p>
+                                <div class="links">
+                                    <label>  
+                                         
+                                            <a href="https://github.com/teddyoweh/Pointers-in-Python">
+    
+                                                <i class='bx bxl-github'></i>  Source Code
+                                            </a>
+                                            
+                                        </label>
+                                </div>
+                            </div>
+
+                            <!--It is widely known that there aren't Pointers in Python and there is only one way of assigning variables in python, but this project creates a new method of assigning variables in python and can be implemented in large-scale projects and make it more efficient-->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="#quote"></div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        /*$(window).load(function() {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           $(".blob1").delay(3000).fadeOut("slow");
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           $(".blob2").delay(3000).fadeOut("slow");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           $(".preloader").delay(3000).fadeOut("slow");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           $(".preloadbody").delay(3000).fadeOut("slow");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       })*/
+    </script>
 </body>
-<script src="./js/script.js"></script>
 <!--footer>
     <span>
             <a href="#">Want to connect, Collaborate, share ideas or enquires? Shoot me a message!</a>
@@ -119,5 +260,7 @@
 </footer-->
 
 
+
+</html>
 
 </html>

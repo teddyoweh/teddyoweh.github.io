@@ -1,18 +1,21 @@
 html,
-body {
-    background: #000;
+.preloadbody {
+    background: transparent;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
-.centered {
-    width: 400px;
+.preloader {
+    width: 100%;
     height: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #000;
-    filter: blur(10px) contrast(20);
+    background: transparent;
+    /* filter: blur(10px) contrast(20); */
 }
 
 .blob-1,
@@ -20,22 +23,23 @@ body {
     width: 70px;
     height: 70px;
     position: absolute;
-    background: #fff;
+    background: #52749b;
     border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px #a6c1dc;
 }
 
 .blob-1 {
     left: 20%;
-    animation: osc-l 2.5s ease infinite;
+    animation: osc-l 3.5s ease infinite;
 }
 
 .blob-2 {
     left: 80%;
-    animation: osc-r 2.5s ease infinite;
-    background: #0ff;
+    animation: osc-r 3.5s ease infinite;
+    background: #adc6e2;
 }
 
 @keyframes osc-l {

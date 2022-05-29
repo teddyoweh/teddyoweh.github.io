@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&family=La+Belle+Aurore&display=swap');
 a {
     text-decoration: none;
 }
@@ -35,6 +36,9 @@ header nav .logo h1 {
     font-family: Jost;
     color: #28466b;
     /* text-shadow: 1px 1px 1px #4d546b; */
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 20px;
+    FONT-WEIGHT: 800;
 }
 
 header nav .nav-items {
@@ -101,6 +105,7 @@ header nav .nav-items ul li a {
     align-items: flex-end;
     width: max-content;
     animation-name: namebox1;
+    animation-timing-function: ease-out;
     animation-duration: 2s;
     position: relative;
     top: 20%;
@@ -174,6 +179,7 @@ header nav .nav-items ul li a {
     animation-timing-function: ease;
     animation-name: about;
     position: relative;
+    margin-top: 10%;
 }
 
 .container#about .about h1 {
@@ -191,6 +197,12 @@ header nav .nav-items ul li a {
     font-size: 23px;
 }
 
+.container#about .about .info {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 20px;
+    FONT-WEIGHT: 800;
+}
+
 .container#about .profileimg {
     position: relative;
     animation-duration: 2s;
@@ -198,18 +210,103 @@ header nav .nav-items ul li a {
     animation-name: aboutimg;
     box-sizing: border-box;
     /* border-style: solid; */
-    border-radius: 100%;
-    box-shadow: 0px 1px 13px #a6b4c5;
+    border-radius: 10px;
     border-color: #a6b4c5;
-    background: transparent;
+    /* background: #44566b; */
+    height: 467px;
+    width: 500px;
+    padding: 20px 35px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+    color: white;
+    background-color: transparent;
+    box-shadow: 0px 0px 0px transparent !important;
+    box-sizing: content-box;
+    /* overflow-y: hidden; */
+    /* overflow-x: visible; */
+    object-fit: cover;
 }
 
 .container#about .profileimg img {
-    height: 610px;
-    width: 610px;
+    height: 500px;
+    width: 400px;
     object-fit: cover;
-    border-radius: 100%;
+    border-radius: 30px;
     box-shadow: 0px 1px 19px #a6b4c5;
+}
+
+.container#about .profileimg .info {}
+
+.container#about .profileimg .info p {
+    font-weight: 800;
+    font-size: 24px;
+    font-family: 'Jost';
+    display: none;
+}
+
+.container#about .profileimg .info p span {
+    /* color: #b1bdc9; */
+    font-size: 22px;
+}
+
+.container#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container#projects h1 {
+    font-family: 'Jost';
+    font-size: 51px;
+    color: #748396;
+}
+
+.container#projects .projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container#projects .projects .completed {
+    width: max-content;
+}
+
+.container#projects .projects .completed p:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container#projects .projects .completed p:nth-child(1) big {
+    font-size: 53px;
+    font-weight: 400;
+    font-family: 'Jost';
+    margin-right: 2%;
+    color: #2e5272;
+}
+
+.container#projects .projects .completed p:nth-child(1) small {
+    font-size: 20px;
+    font-family: 'Jost';
+    color: #90a3b3;
+}
+
+.container#projects .projects .completed p:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Jost';
+    color: #90a3b3;
+    width: 62%;
+}
+
+.container#projects .projects .completed p:nth-child(2) a {
+    color: #2e5272;
 }
 
 footer {
@@ -368,6 +465,29 @@ header nav .menubar .bar:nth-child(3) {}
         top: 18%;
         left: 26%;
     }
+    .container#about {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 76px;
+        /* background: white; */
+        align-items: center;
+    }
+    .container#about .about p {
+        width: 100%;
+    }
+    .container#about .about h1 {
+        text-align: center;
+    }
+    .container#projects .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container#projects .projects .completed {
+        width: max-content;
+        display: contents;
+    }
     footer {
         padding: 59px 0px;
         padding-bottom: 10px;
@@ -385,6 +505,7 @@ header nav .menubar .bar:nth-child(3) {}
             top: 18%;
             left: 26%;
             opacity: 1;
+            position: relative;
         }
     }
 }
