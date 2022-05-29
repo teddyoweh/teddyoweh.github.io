@@ -33,7 +33,8 @@ header nav .logo {}
 
 header nav .logo h1 {
     font-family: Jost;
-    color: #68b2ff;
+    color: #939cb8;
+    /* text-shadow: 1px 1px 1px #4d546b; */
 }
 
 header nav .nav-items {
@@ -96,7 +97,9 @@ header nav .nav-items ul li a {
     width: max-content;
     animation-name: namebox1;
     animation-duration: 2s;
-    transform: translate(40%, 50%);
+    position: relative;
+    top: 20%;
+    left: 20%;
 }
 
 .container#home .home .namebox {
@@ -271,31 +274,64 @@ footer ul li:hover {
 
 @keyframes namebox1 {
     from {
-        transform: translate(-584px, -520px);
+        top: -120%;
+        left: -120%;
         opacity: 0;
     }
     to {
-        transform: translate(50%, 50%);
+        top: 20%;
+        left: 20%;
         opacity: 1;
     }
 }
 
-header nav .menubar {}
+header nav .menubar {
+    position: absolute;
+    right: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+    cursor: pointer;
+}
 
-header nav .menubar .bar {}
+header nav .menubar:hover .bar:nth-child(1) {
+    width: 30px;
+    transition: 0.5s;
+}
 
-header nav .menubar .bar:nth-child(1) {}
+header nav .menubar:hover .bar:nth-child(2) {
+    width: 30px;
+    transition: 0.3s;
+}
 
-header nav .menubar .bar:nth-child(2) {}
+header nav .menubar .bar {
+    padding: 1.5px;
+    background: #939cb8;
+    margin-top: 24%;
+    width: 30px;
+    border-radius: 19px;
+    transition: 0.3s;
+}
+
+header nav .menubar .bar:nth-child(1) {
+    width: 20px;
+}
+
+header nav .menubar .bar:nth-child(2) {
+    width: 25px;
+}
 
 header nav .menubar .bar:nth-child(3) {}
 
 @media screen and (max-width: 900px) {
-    header nav .nav-items ul {
+    header nav .nav-items {
         display: none;
     }
     header nav {
         justify-content: space-between;
+    }
+    header nav .menubar {
+        display: flex;
     }
     .container#home .home .namebox label {
         font-size: 40px;
@@ -303,7 +339,8 @@ header nav .menubar .bar:nth-child(3) {}
     .container#home .home {
         animation-name: namebox1;
         animation-duration: 2s;
-        transform: translate(15%, 50%);
+        top: 18%;
+        left: 9%;
     }
     footer {
         padding: 59px 0px;
@@ -314,11 +351,13 @@ header nav .menubar .bar:nth-child(3) {}
     }
     @keyframes namebox1 {
         from {
-            transform: translate(-584px, -520px);
+            top: -120%;
+            left: -120%;
             opacity: 0;
         }
         to {
-            transform: translate(15%, 50%);
+            top: 18%;
+            left: 9%;
             opacity: 1;
         }
     }
