@@ -12,6 +12,7 @@ body {
     margin: 0;
     background: #edf2f8;
     scroll-behavior: smooth;
+    width: 90%;
 }
 
 header {
@@ -30,7 +31,18 @@ header nav {
     /* top: 0; */
 }
 
-header nav .logo {}
+header nav .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav .logo img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin-right: 5%;
+}
 
 header nav .logo h1 {
     font-family: Jost;
@@ -164,7 +176,7 @@ header nav .nav-items ul li a {
 .container#home .home .namebox:nth-child(2) small {
     font-family: 'Jost';
     font-weight: 600;
-    color: #b2b2b2;
+    color: #adc2cf;
 }
 
 .container#about {
@@ -309,22 +321,118 @@ header nav .nav-items ul li a {
     color: #2e5272;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
+.container#tools {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5%;
+}
+
+.container#tools h1 {
+    font-family: 'Jost';
+    font-size: 51px;
+    color: #748396;
+}
+
+.container#tools .tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
-    background: #dee5ed;
-    border-radius: 51% 49% 100% 0% / 100% 100% 0% 0%;
-    padding: 32px 0px;
+    flex-wrap: wrap;
+}
+
+.container#tools .tools a {
+    padding: 10px;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 2%;
+    color: #3b4a57;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    justify-content: space-around;
+}
+
+.container#tools .tools a:hover {
+    background: #3b4a57;
+    transition: 0.3s;
+}
+
+.container#quote {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, #4e627a, lightblue);
+    margin-top: 10%;
+    box-shadow: 1px 1px 10px grey;
+    margin-left: 2%;
+}
+
+.container#quote .quoteicon {
+    float: left;
+    font-size: 60px;
+    color: white;
+}
+
+.container#quote .quote {
+    /* float: right; */
+    text-align: center;
+    font-size: 40px;
+    font-family: 'La Belle Aurore';
+    font-weight: 800;
+    color: #295073;
+}
+
+.container#quote .quote p {}
+
+.container#quote .quote small {
+    font-family: serif;
+    font-weight: 500;
+    font-size: 19px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* float: right; */
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.container#quote .quote small.dash {}
+
+footer {
+    position: absolute;
+    /* bottom: 0; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background: white;
+    /* border-radius: 51% 49% 100% 0% / 100% 100% 0% 0%; */
+    padding: 1px 10px;
+    height: max-content;
+    justify-content: space-around;
+    margin-top: 5%;
+    box-sizing: border-box;
+    box-shadow: 1px -2px 6px #9da9b3;
+}
+
+footer img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
 }
 
 footer span a {
     color: #5494b7;
-    font-family: 'Jost';
-    letter-spacing: 1px;
+    font-family: calibri;
+    /* letter-spacing: 1px; */
     font-weight: 800;
 }
 
@@ -337,7 +445,7 @@ footer ul {
     display: flex;
     width: max-content;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 footer ul li {
@@ -488,12 +596,27 @@ header nav .menubar .bar:nth-child(3) {}
         width: max-content;
         display: contents;
     }
+    .container#quote {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container#quote .quote {
+        /* float: right; */
+        text-align: center;
+        font-size: 34px;
+    }
     footer {
-        padding: 59px 0px;
+        /* padding: 59px 0px; */
         padding-bottom: 10px;
     }
     footer span a {
         font-size: 13px;
+        /* width: 32%; */
+    }
+    footer img {
+        height: 50px;
+        width: 100px;
+        object-fit: cover;
     }
     @keyframes namebox1 {
         from {

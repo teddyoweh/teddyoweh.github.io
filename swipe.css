@@ -27,10 +27,11 @@
 
 .mycards .caption .title {
     padding: 10px;
-    font-size: 40px;
+    font-size: 37px;
     font-weight: 800;
     font-family: 'Jost';
     color: #2e5272;
+    text-align: center;
 }
 
 .mycards .caption .links {
@@ -62,22 +63,28 @@
     /* float: left; */
     width: 100%;
     margin-top: -3%;
+    box-sizing: border-box;
+    display: flex;
 }
 
 .mycards .caption .lang label {
     display: flex;
     flex-direction: row;
-    background-color: #405d7859;
+    background-color: #7692ad59;
     padding: 2px 10px;
     border-radius: 10px;
     /* align-items: center; */
     width: max-content;
+    box-sizing: content-box;
+    justify-content: space-between;
+    margin-right: 1%;
 }
 
 .mycards .caption .lang label img {
     width: 32px;
     height: 32px;
     object-fit: cover;
+    margin-right: 1%;
 }
 
 .mycards .caption .desc {
