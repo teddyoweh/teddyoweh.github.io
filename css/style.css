@@ -23,7 +23,7 @@ header nav {
     align-items: center;
     justify-content: center;
     background: #edf2f8;
-    box-shadow: 1px 1px 10px #8a979f;
+    /* box-shadow: 1px 1px 10px #8a979f; */
     /* position: fixed; */
     width: 100%;
     /* top: 0; */
@@ -33,7 +33,7 @@ header nav .logo {}
 
 header nav .logo h1 {
     font-family: Jost;
-    color: #939cb8;
+    color: #28466b;
     /* text-shadow: 1px 1px 1px #4d546b; */
 }
 
@@ -69,12 +69,13 @@ header nav .nav-items ul li a {
 
 .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .container {
@@ -87,7 +88,11 @@ header nav .nav-items ul li a {
     flex-wrap: wrap;
     height: 848px;
     box-shadow: 1px 1px 8px #edf2f8;
-    background: #edf2f8;
+    background: linear-gradient(45deg, #e5f0fc, transparent);
+    width: max-content;
+    box-sizing: content-box;
+    /* border-style: solid; */
+    /* transform: rotate(45deg); */
 }
 
 .container#home .home {
@@ -102,6 +107,24 @@ header nav .nav-items ul li a {
     left: 20%;
 }
 
+.column {}
+
+.row {
+    align-items: center !important;
+    width: 100% !important;
+}
+
+.myicon {
+    margin-right: 1%;
+}
+
+.myicon img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
 .container#home .home .namebox {
     width: max-content;
     display: flex;
@@ -111,6 +134,8 @@ header nav .nav-items ul li a {
     border-radius: 9px;
     box-shadow: 1px 1px 10px #d1d6d9;
     background: white;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 
 .container#home .home .namebox span {
@@ -122,6 +147,7 @@ header nav .nav-items ul li a {
     font-family: 'Jost';
     font-size: 65px;
     font-weight: 900;
+    color: #28466b;
 }
 
 .container#home .home .namebox:nth-child(2) {
@@ -340,7 +366,7 @@ header nav .menubar .bar:nth-child(3) {}
         animation-name: namebox1;
         animation-duration: 2s;
         top: 18%;
-        left: 9%;
+        left: 26%;
     }
     footer {
         padding: 59px 0px;
@@ -357,7 +383,7 @@ header nav .menubar .bar:nth-child(3) {}
         }
         to {
             top: 18%;
-            left: 9%;
+            left: 26%;
             opacity: 1;
         }
     }
