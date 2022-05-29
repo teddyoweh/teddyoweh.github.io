@@ -2,6 +2,643 @@
 <html lang="en">
 
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&family=La+Belle+Aurore&display=swap');
+        a {
+            text-decoration: none;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            background: #edf2f8;
+            scroll-behavior: smooth;
+            width: 90%;
+        }
+        
+        header {
+            /* position: fixed; */
+        }
+        
+        header nav {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #edf2f8;
+            /* box-shadow: 1px 1px 10px #8a979f; */
+            /* position: fixed; */
+            width: 100%;
+            /* top: 0; */
+        }
+        
+        header nav .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        header nav .logo img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            margin-right: 5%;
+        }
+        
+        header nav .logo h1 {
+            font-family: Jost;
+            color: #28466b;
+            /* text-shadow: 1px 1px 1px #4d546b; */
+            font-family: 'La Belle Aurore', cursive;
+            font-size: 20px;
+            FONT-WEIGHT: 800;
+        }
+        
+        header nav .nav-items {
+            width: max-content;
+        }
+        
+        header nav .nav-items ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            width: max-content;
+        }
+        
+        header nav .nav-items ul li {
+            margin-right: 6%;
+            border-radius: 10px;
+            transition: 0.5s;
+            padding: 5px 8px;
+            cursor: pointer;
+        }
+        
+        header nav .nav-items ul li:hover {
+            transition: 0.5s;
+            background: #d7e3ee;
+        }
+        
+        header nav .nav-items ul li a {
+            font-family: Jost;
+            color: grey;
+            text-transform: uppercase;
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row !important;
+        }
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .container {
+            /* position: absolute; */
+        }
+        
+        .container#home {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 848px;
+            box-shadow: 1px 1px 8px #edf2f8;
+            background: linear-gradient(45deg, #e5f0fc, transparent);
+            width: max-content;
+            box-sizing: content-box;
+            /* border-style: solid; */
+            /* transform: rotate(45deg); */
+        }
+        
+        .container#home .home {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: max-content;
+            animation-name: namebox1;
+            animation-timing-function: ease-out;
+            animation-duration: 2s;
+            position: relative;
+            top: 20%;
+            left: 20%;
+        }
+        
+        .column {}
+        
+        .row {
+            align-items: center !important;
+            width: 100% !important;
+        }
+        
+        .myicon {
+            margin-right: 1%;
+        }
+        
+        .myicon img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+        
+        .container#home .home .namebox {
+            width: max-content;
+            display: flex;
+            flex-direction: column;
+            /* transform: translate(162px, 102px); */
+            padding: 1rem 2rem;
+            border-radius: 9px;
+            box-shadow: 1px 1px 10px #d1d6d9;
+            background: white;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+        
+        .container#home .home .namebox span {
+            font-family: system-ui;
+            color: #bebaba;
+        }
+        
+        .container#home .home .namebox label {
+            font-family: 'Jost';
+            font-size: 65px;
+            font-weight: 900;
+            color: #28466b;
+        }
+        
+        .container#home .home .namebox:nth-child(2) {
+            margin-top: 10%;
+            padding: font-size;
+            font-size: 19px;
+        }
+        
+        .container#home .home .namebox:nth-child(2) small {
+            font-family: 'Jost';
+            font-weight: 600;
+            color: #adc2cf;
+        }
+        
+        .container#about {
+            display: flex;
+            flex-direction: row;
+            padding: 76px;
+            /* background: white; */
+        }
+        
+        .container#about .about {
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-name: about;
+            position: relative;
+            margin-top: 10%;
+        }
+        
+        .container#about .about h1 {
+            font-family: 'Jost';
+            font-size: 51px;
+            color: #748396;
+        }
+        
+        .container#about .about p {
+            font-family: system-ui;
+            ;
+            font-weight: 600;
+            color: #5c8396;
+            width: 73%;
+            font-size: 23px;
+        }
+        
+        .container#about .about .info {
+            font-family: 'La Belle Aurore', cursive;
+            font-size: 20px;
+            FONT-WEIGHT: 800;
+        }
+        
+        .container#about .profileimg {
+            position: relative;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-name: aboutimg;
+            box-sizing: border-box;
+            /* border-style: solid; */
+            border-radius: 10px;
+            border-color: #a6b4c5;
+            /* background: #44566b; */
+            height: 467px;
+            width: 500px;
+            padding: 20px 35px 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.4s;
+            color: white;
+            background-color: transparent;
+            box-shadow: 0px 0px 0px transparent !important;
+            box-sizing: content-box;
+            /* overflow-y: hidden; */
+            /* overflow-x: visible; */
+            object-fit: cover;
+        }
+        
+        .container#about .profileimg img {
+            height: 500px;
+            width: 400px;
+            object-fit: cover;
+            border-radius: 30px;
+            box-shadow: 0px 1px 19px #a6b4c5;
+        }
+        
+        .container#about .profileimg .info {}
+        
+        .container#about .profileimg .info p {
+            font-weight: 800;
+            font-size: 24px;
+            font-family: 'Jost';
+            display: none;
+        }
+        
+        .container#about .profileimg .info p span {
+            /* color: #b1bdc9; */
+            font-size: 22px;
+        }
+        
+        .container#projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .container#projects h1 {
+            font-family: 'Jost';
+            font-size: 51px;
+            color: #748396;
+        }
+        
+        .container#projects .projects {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .container#projects .projects .completed {
+            width: max-content;
+        }
+        
+        .container#projects .projects .completed p:nth-child(1) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+        .container#projects .projects .completed p:nth-child(1) big {
+            font-size: 53px;
+            font-weight: 400;
+            font-family: 'Jost';
+            margin-right: 2%;
+            color: #2e5272;
+        }
+        
+        .container#projects .projects .completed p:nth-child(1) small {
+            font-size: 20px;
+            font-family: 'Jost';
+            color: #90a3b3;
+        }
+        
+        .container#projects .projects .completed p:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            font-family: 'Jost';
+            color: #90a3b3;
+            width: 62%;
+        }
+        
+        .container#projects .projects .completed p:nth-child(2) a {
+            color: #2e5272;
+        }
+        
+        .container#tools {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5%;
+        }
+        
+        .container#tools h1 {
+            font-family: 'Jost';
+            font-size: 51px;
+            color: #748396;
+        }
+        
+        .container#tools .tools {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        
+        .container#tools .tools a {
+            padding: 10px;
+            border-radius: 100%;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 2%;
+            color: #3b4a57;
+            background-color: transparent;
+            border-style: solid;
+            border-width: 1px;
+            justify-content: space-around;
+        }
+        
+        .container#tools .tools a:hover {
+            background: #3b4a57;
+            transition: 0.3s;
+        }
+        
+        .container#quote {
+            width: 100%;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(45deg, #4e627a, lightblue);
+            margin-top: 10%;
+            box-shadow: 1px 1px 10px grey;
+            margin-left: 2%;
+        }
+        
+        .container#quote .quoteicon {
+            float: left;
+            font-size: 60px;
+            color: white;
+        }
+        
+        .container#quote .quote {
+            /* float: right; */
+            text-align: center;
+            font-size: 40px;
+            font-family: 'La Belle Aurore';
+            font-weight: 800;
+            color: #295073;
+        }
+        
+        .container#quote .quote p {}
+        
+        .container#quote .quote small {
+            font-family: serif;
+            font-weight: 500;
+            font-size: 19px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /* float: right; */
+            width: 100%;
+            justify-content: flex-end;
+        }
+        
+        .container#quote .quote small.dash {}
+        
+        footer {
+            position: absolute;
+            /* bottom: 0; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            background: white;
+            /* border-radius: 51% 49% 100% 0% / 100% 100% 0% 0%; */
+            padding: 1px 10px;
+            height: max-content;
+            justify-content: space-around;
+            margin-top: 5%;
+            box-sizing: border-box;
+            box-shadow: 1px -2px 6px #9da9b3;
+        }
+        
+        footer img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+        }
+        
+        footer span a {
+            color: #5494b7;
+            font-family: calibri;
+            /* letter-spacing: 1px; */
+            font-weight: 800;
+        }
+        
+        footer ul a {
+            margin: 3%;
+        }
+        
+        footer ul {
+            list-style: none;
+            display: flex;
+            width: max-content;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        footer ul li {
+            padding: 10px;
+            background: white;
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            margin: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #646c7b;
+            transition: 0.4s;
+        }
+        
+        footer ul li:hover {
+            color: white;
+            background: #646c7b;
+            transition: 0.4s;
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+        
+        .sticky+.content {
+            padding-top: 60px;
+        }
+        
+        @keyframes about {
+            from {
+                left: -50%;
+                opacity: 0;
+            }
+            to {
+                left: 0%;
+                opacity: 1;
+            }
+        }
+        
+        @keyframes aboutimg {
+            from {
+                right: -50%;
+                opacity: 0;
+            }
+            to {
+                right: 0%;
+                opacity: 1;
+            }
+        }
+        
+        @keyframes namebox1 {
+            from {
+                top: -120%;
+                left: -120%;
+                opacity: 0;
+            }
+            to {
+                top: 20%;
+                left: 20%;
+                opacity: 1;
+            }
+        }
+        
+        header nav .menubar {
+            position: absolute;
+            right: 10px;
+            flex-direction: column;
+            align-items: flex-end;
+            display: none;
+            cursor: pointer;
+        }
+        
+        header nav .menubar:hover .bar:nth-child(1) {
+            width: 30px;
+            transition: 0.5s;
+        }
+        
+        header nav .menubar:hover .bar:nth-child(2) {
+            width: 30px;
+            transition: 0.3s;
+        }
+        
+        header nav .menubar .bar {
+            padding: 1.5px;
+            background: #939cb8;
+            margin-top: 24%;
+            width: 30px;
+            border-radius: 19px;
+            transition: 0.3s;
+        }
+        
+        header nav .menubar .bar:nth-child(1) {
+            width: 20px;
+        }
+        
+        header nav .menubar .bar:nth-child(2) {
+            width: 25px;
+        }
+        
+        header nav .menubar .bar:nth-child(3) {}
+        
+        @media screen and (max-width: 900px) {
+            header nav .nav-items {
+                display: none;
+            }
+            header nav {
+                justify-content: space-between;
+            }
+            header nav .menubar {
+                display: flex;
+            }
+            .container#home .home .namebox label {
+                font-size: 40px;
+            }
+            .container#home .home {
+                animation-name: namebox1;
+                animation-duration: 2s;
+                top: 18%;
+                left: 26%;
+            }
+            .container#about {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 76px;
+                /* background: white; */
+                align-items: center;
+            }
+            .container#about .about p {
+                width: 100%;
+            }
+            .container#about .about h1 {
+                text-align: center;
+            }
+            .container#projects .projects {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .container#projects .projects .completed {
+                width: max-content;
+                display: contents;
+            }
+            .container#quote {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .container#quote .quote {
+                /* float: right; */
+                text-align: center;
+                font-size: 34px;
+            }
+            footer {
+                /* padding: 59px 0px; */
+                padding-bottom: 10px;
+            }
+            footer span a {
+                font-size: 13px;
+                /* width: 32%; */
+            }
+            footer img {
+                height: 50px;
+                width: 100px;
+                object-fit: cover;
+            }
+            @keyframes namebox1 {
+                from {
+                    top: -120%;
+                    left: -120%;
+                    opacity: 0;
+                }
+                to {
+                    top: 18%;
+                    left: 26%;
+                    opacity: 1;
+                    position: relative;
+                }
+            }
+        }
+    </style>
+
     <meta charset="utf-8" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +651,7 @@
     <link rel='icon' href="./img/logo.png">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/swipe.css" />
 </head>
+
 
 <body>
 
@@ -453,12 +1091,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
         /*$(window).load(function() {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $(".blob1").delay(3000).fadeOut("slow");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $(".blob1").delay(3000).fadeOut("slow");
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $(".blob2").delay(3000).fadeOut("slow");
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $(".preloader").delay(3000).fadeOut("slow");
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $(".preloadbody").delay(3000).fadeOut("slow");
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           })*/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $(".blob2").delay(3000).fadeOut("slow");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $(".preloader").delay(3000).fadeOut("slow");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $(".preloadbody").delay(3000).fadeOut("slow");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   })*/
     </script>
 
 
@@ -504,3 +1142,7 @@
 </html>
 
 </html>
+
+
+
+<style></style>
