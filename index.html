@@ -114,6 +114,7 @@
             background: linear-gradient(45deg, #e5f0fc, transparent);
             width: max-content;
             box-sizing: content-box;
+            padding-left: 11px;
             /* border-style: solid; */
             /* transform: rotate(45deg); */
         }
@@ -253,11 +254,10 @@
         }
         
         .container#about .profileimg img {
-            height: 500px;
+            height: 400px;
             width: 400px;
             object-fit: cover;
-            border-radius: 30px;
-            box-shadow: 0px 1px 19px #a6b4c5;
+            border-radius: 100%;
         }
         
         .container#about .profileimg .info {}
@@ -325,6 +325,7 @@
             font-family: 'Jost';
             color: #90a3b3;
             width: 62%;
+            text-align: justify;
         }
         
         .container#projects .projects .completed p:nth-child(2) a {
@@ -590,6 +591,7 @@
             }
             .container#about .about p {
                 width: 100%;
+                font-size: 15px;
             }
             .container#about .about h1 {
                 text-align: center;
@@ -705,6 +707,7 @@
             </div>
         </nav>
     </header>
+
     <div class="container" id="home">
         <div class="home">
 
@@ -725,69 +728,70 @@
 
         </div>
     </div>
-    <div class="container" id="about">
-        <div class="about">
+    <div class="genbody">
+        <div class="container" id="about">
+            <div class="about">
 
 
-            <h1> About Me</h1>
+                <h1> About Me</h1>
 
-            <p>I'm an Enthusiastic Machine Learning Developer, skilled proficiently in Python, PHP, C, ReactJS, and React Native. but as a developer, I work with Python.<br><br> Experienced in migrating codebases with different web frameworks, detailed data
-                analysis, and deploying web services and applications using AWS and Hostinger.<br><br> Knowledge of using machine learning algorithms to solve data-based problems, creating, deploying & managing APIs/ Microservices with Python Flask Framework
-                Also Integrating with API keys. Skilled in hands-on algorithm design and algorithmic problem-solving. </p>
-
-
-
-        </div>
-        <div class="profileimg">
-            <img src="./img/ted.jpg">
-
-        </div>
-    </div>
-    <div class="container" id="projects">
-        <h1>Projects</h1>
+                <p>I'm an Enthusiastic Machine Learning Developer, skilled proficiently in Python, PHP, C, ReactJS, and React Native. but as a developer, I work with Python.<br><br> Experienced in migrating codebases with different web frameworks, detailed
+                    data analysis, and deploying web services and applications using AWS and Hostinger.<br><br> Knowledge of using machine learning algorithms to solve data-based problems, creating, deploying & managing APIs/ Microservices with Python
+                    Flask Framework Also Integrating with API keys. Skilled in hands-on algorithm design and algorithmic problem-solving. </p>
 
 
 
-        <div class="projects">
-            <div class="completed">
-                <p><big>10+</big><small> Projects Completed</small></p>
-                <p>View my Projects in my Projects Overview and Source Code in my Github Repository
-                    <a href="https://github.com/teddyoweh/ ">
-
-                        <i class='bx bxl-github'></i> teddyoweh
-                    </a>
-                </p>
             </div>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="mycards">
+            <div class="profileimg">
+                <img src="./img/ted.jpg">
 
-                            <div class="caption">
-                                <label class="title">Omarke</label>
+            </div>
+        </div>
+        <div class="container" id="projects">
+            <h1>Projects</h1>
 
 
-                                <div class="lang">
 
-                                    <label>
+            <div class="projects">
+                <div class="completed">
+                    <p><big>10+</big><small> Projects Completed</small></p>
+                    <p>View my Projects in my Projects Overview and Source Code in my Github Repository
+                        <a href="https://github.com/teddyoweh/ ">
+
+                            <i class='bx bxl-github'></i> teddyoweh
+                        </a>
+                    </p>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mycards">
+
+                                <div class="caption">
+                                    <label class="title">Omarke</label>
+
+
+                                    <div class="lang">
+
+                                        <label>
                             
                                         <img src="https://img.icons8.com/fluency/48/000000/python.png"/>
                                       
                                        
                                        </label>
-                                    <label>
+                                        <label>
                             
                                       
                                          <img src="https://img.icons8.com/color/96/000000/visual-studio--v2.png"/>
                                         
                                         </label>
 
-                                </div>
-                                <p class="desc">Omark is a Python library that implements a linear search algorithm with a facial recognition module, on a database of pictures. It captures a picture of a group of people and determines who is absent from the picture,
-                                    who is present in the picture and how many people are in the picture. An implementation of this in a real-world scenario is in taking class attendances, it captures a picture of a classroom and then performs a linear
-                                    search algorithm on a database to determine which student is in class and which student isn't.</p>
-                                <div class="links">
-                                    <label>  
+                                    </div>
+                                    <p class="desc">Omark is a Python library that implements a linear search algorithm with a facial recognition module, on a database of pictures. It captures a picture of a group of people and determines who is absent from the picture,
+                                        who is present in the picture and how many people are in the picture. An implementation of this in a real-world scenario is in taking class attendances, it captures a picture of a classroom and then performs a linear
+                                        search algorithm on a database to determine which student is in class and which student isn't.</p>
+                                    <div class="links">
+                                        <label>  
                                         <a href="https://pypi.org/project/Omarke/"><i class='bx bxs-package'></i>  Package</a>
                                             <a href="https://github.com/teddyoweh/Omark ">
     
@@ -795,42 +799,42 @@
                                             </a>
                                             
                                         </label>
+                                    </div>
                                 </div>
+
+
                             </div>
-
-
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="mycards">
+                        <div class="swiper-slide">
+                            <div class="mycards">
 
-                            <div class="caption">
-                                <label class="title">Pointers in Python</label>
-
-
-                                <div class="lang">
+                                <div class="caption">
+                                    <label class="title">Pointers in Python</label>
 
 
-                                    <label>
+                                    <div class="lang">
+
+
+                                        <label>
                             
                                          <img src="https://img.icons8.com/fluency/48/000000/python.png"/>
                                          
                                         
                                         </label>
-                                    <label>
+                                        <label>
                             
                                            
                                             <img src="https://img.icons8.com/color/96/000000/visual-studio--v2.png"/>
                                            
                                            </label>
 
-                                </div>
-                                <p class="desc">
-                                    It is widely known that there aren't Pointers in Python and there is only one way of assigning variables in python, but this project creates a new method of assigning variables in python and can be implemented in large-scale projects and make it more.
-                                    efficient-->
-                                </p>
-                                <div class="links">
-                                    <label>  
+                                    </div>
+                                    <p class="desc">
+                                        It is widely known that there aren't Pointers in Python and there is only one way of assigning variables in python, but this project creates a new method of assigning variables in python and can be implemented in large-scale projects and make it more.
+                                        efficient-->
+                                    </p>
+                                    <div class="links">
+                                        <label>  
                                          
                                             <a href="https://github.com/teddyoweh/Pointers-in-Python">
     
@@ -838,30 +842,30 @@
                                             </a>
                                             
                                         </label>
+                                    </div>
                                 </div>
+
+
                             </div>
-
-
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="mycards">
+                        <div class="swiper-slide">
+                            <div class="mycards">
 
-                            <div class="caption">
-                                <label class="title">Geo-Location Plugin</label>
-
-
-                                <div class="lang">
+                                <div class="caption">
+                                    <label class="title">Geo-Location Plugin</label>
 
 
-                                    <label>
+                                    <div class="lang">
+
+
+                                        <label>
                             
                                         <img src="https://img.icons8.com/offices/40/000000/php-logo.png"/>
                                         
                                         
                                         </label>
 
-                                    <label>
+                                        <label>
                             
                                        
                                          <img src="https://img.icons8.com/color/96/000000/visual-studio--v2.png"/>
@@ -869,12 +873,12 @@
                                         </label>
 
 
-                                </div>
-                                <p class="desc">
-                                    Geolocation Plugin was created with PHP, it uses makes an API Call, decodes the JSON response, and gets the IP address, city, country, zip code, and state on the client-side and can be implemented and added to any project as a plugin.
-                                </p>
-                                <div class="links">
-                                    <label>  
+                                    </div>
+                                    <p class="desc">
+                                        Geolocation Plugin was created with PHP, it uses makes an API Call, decodes the JSON response, and gets the IP address, city, country, zip code, and state on the client-side and can be implemented and added to any project as a plugin.
+                                    </p>
+                                    <div class="links">
+                                        <label>  
                                          
                                             <a href="https://github.com/teddyoweh/Geo-Location-Plugin-PHP">
     
@@ -882,36 +886,36 @@
                                             </a>
                                             
                                         </label>
+                                    </div>
                                 </div>
+
+
                             </div>
-
-
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="mycards">
+                        <div class="swiper-slide">
+                            <div class="mycards">
 
-                            <div class="caption">
-                                <label class="title">Sentiment Analysis API</label>
-
-
-                                <div class="lang">
+                                <div class="caption">
+                                    <label class="title">Sentiment Analysis API</label>
 
 
-                                    <label>
+                                    <div class="lang">
+
+
+                                        <label>
                                         <img src="https://img.icons8.com/fluency/48/000000/python.png"/>
                             
                                  
                                         
                                         </label>
-                                    <label>
+                                        <label>
                              
                                 
                                             <img src="https://img.icons8.com/offices/40/000000/php-logo.png"/>
                                          
                                             
                                             </label>
-                                    <label>
+                                        <label>
            
                                     
                                                
@@ -919,23 +923,23 @@
                                            
                                                 
                                                 </label>
-                                    <label>
+                                        <label>
                                                 
                                                     <img src="https://img.icons8.com/ios/50/000000/flask.png"/>
                                                       
                                                     </label>
-                                    <label>
+                                        <label>
                                                     
                                                          <img src="https://img.icons8.com/color/96/000000/visual-studio--v2.png"/>
                                                         
                                                         </label>
-                                </div>
-                                <p class="desc">
-                                    The Sentiment Analysis API was created using the python flask module, parsing a text or sentence can parse the (text) argument, and a JSON encoded response is given with the detailed sentiment analysis of that sentence including information such as the
-                                    Text Parsed, the Sentiment Level of the text, the sentiment polarity of the text and the sentiment subjectivity of the text. It can be implemented and embedded into a web application..
-                                </p>
-                                <div class="links">
-                                    <label>  
+                                    </div>
+                                    <p class="desc">
+                                        The Sentiment Analysis API was created using the python flask module, parsing a text or sentence can parse the (text) argument, and a JSON encoded response is given with the detailed sentiment analysis of that sentence including information such as the
+                                        Text Parsed, the Sentiment Level of the text, the sentiment polarity of the text and the sentiment subjectivity of the text. It can be implemented and embedded into a web application..
+                                    </p>
+                                    <div class="links">
+                                        <label>  
                                          
                                             <a href="https://github.com/teddyoweh/Sentiment-Analysis-API">
     
@@ -943,139 +947,139 @@
                                             </a>
                                             
                                         </label>
+                                    </div>
                                 </div>
+
+
                             </div>
-
-
                         </div>
-                    </div>
 
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
-    </div>
-    <div class="container" id="quote">
-        <div class="quoteicon">
-            <i class='bx bxs-quote-alt-left'></i>
+        <div class="container" id="quote">
+            <div class="quoteicon">
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <div class="quote">
+                <p>Either I will find a way or I will make one</p>
+                <small><div class="dash"></div> the quote i live by</small>
+            </div>
         </div>
-        <div class="quote">
-            <p>Either I will find a way or I will make one</p>
-            <small><div class="dash"></div> the quote i live by</small>
+        <div class="container" id="stack">
+            <h1>Tech Stack</h1>
+            <div class="stack">
+                <a href="https://visualstudio.microsoft.com/" target="_blank">
+                    <div class="tool">
+                        <img src="https://img.icons8.com/fluency/48/000000/visual-studio.png" />
+
+                    </div>
+                </a>
+                <a href="https://git-scm.com/">
+                    <div class="tool">
+                        <img src="https://img.icons8.com/color/48/000000/git.png" />
+
+                    </div>
+                </a>
+                <a href="https://reactjs.org/" target="_blank">
+                    <div class="tool">
+                        <img src="https://img.icons8.com/officel/48/000000/react.png" />
+
+                    </div>
+                </a>
+                <a href="https://www.python.org/" target="_blank">
+                    <div class="tool">
+                        <img src="https://img.icons8.com/color/48/000000/python--v1.png" />
+
+                    </div>
+                </a>
+                <a href="https://jupyter.org/" target="_blank">
+                    <div class="tool">
+                        <img src="https://img.icons8.com/fluency/48/000000/jupyter.png" />
+
+                    </div>
+                    <a href="https://www.tensorflow.org/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/color/48/000000/tensorflow.png" />
+
+                        </div>
+                    </a>
+                    <a href="https://www.javascript.com/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
+
+                        </div>
+                    </a>
+                    <a href="https://www.typescriptlang.org/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/color/48/000000/typescript.png" />
+
+                        </div>
+                    </a>
+                    <a href="https://nodejs.org/en/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/fluency/48/000000/node-js.png" />
+
+                        </div>
+                    </a>
+                    <a href="https://flutter.dev/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/color/48/000000/flutter.png" />
+
+                        </div>
+                    </a>
+
+                    <a href="https://www.php.net/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/offices/48/000000/php-logo.png" />
+
+                        </div>
+                    </a>
+                    <a href="https://leetcode.com/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" />
+
+                        </div>
+                    </a>
+                    <a href="https://stackoverflow.com/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/color/48/000000/stackoverflow.png" />
+
+                        </div>
+                    </a>
+                    <a href="https://www.kaggle.com/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/windows/32/000000/kaggle.png" />
+
+                        </div>
+                    </a>
+                    <a href="https://www.mysql.com/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/fluency/48/000000/mysql-logo.png" />
+
+                        </div>
+                    </a>
+                    <a href="https://soliditylang.org/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/solidity.png" />
+
+                        </div>
+                    </a>
+                    <a href="https://flask.palletsprojects.com/en/2.1.x/" target="_blank">
+                        <div class="tool">
+                            <img src="https://img.icons8.com/color/48/000000/flask.png" />
+
+                        </div>
+                    </a>
+
+
+
+            </div>
+
         </div>
     </div>
-    <div class="container" id="stack">
-        <h1>Tech Stack</h1>
-        <div class="stack">
-            <a href="https://visualstudio.microsoft.com/" target="_blank">
-                <div class="tool">
-                    <img src="https://img.icons8.com/fluency/48/000000/visual-studio.png" />
-
-                </div>
-            </a>
-            <a href="https://git-scm.com/">
-                <div class="tool">
-                    <img src="https://img.icons8.com/color/48/000000/git.png" />
-
-                </div>
-            </a>
-            <a href="https://reactjs.org/" target="_blank">
-                <div class="tool">
-                    <img src="https://img.icons8.com/officel/48/000000/react.png" />
-
-                </div>
-            </a>
-            <a href="https://www.python.org/" target="_blank">
-                <div class="tool">
-                    <img src="https://img.icons8.com/color/48/000000/python--v1.png" />
-
-                </div>
-            </a>
-            <a href="https://jupyter.org/" target="_blank">
-                <div class="tool">
-                    <img src="https://img.icons8.com/fluency/48/000000/jupyter.png" />
-
-                </div>
-                <a href="https://www.tensorflow.org/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/color/48/000000/tensorflow.png" />
-
-                    </div>
-                </a>
-                <a href="https://www.javascript.com/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
-
-                    </div>
-                </a>
-                <a href="https://www.typescriptlang.org/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/color/48/000000/typescript.png" />
-
-                    </div>
-                </a>
-                <a href="https://nodejs.org/en/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/fluency/48/000000/node-js.png" />
-
-                    </div>
-                </a>
-                <a href="https://flutter.dev/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/color/48/000000/flutter.png" />
-
-                    </div>
-                </a>
-
-                <a href="https://www.php.net/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/offices/48/000000/php-logo.png" />
-
-                    </div>
-                </a>
-                <a href="https://leetcode.com/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" />
-
-                    </div>
-                </a>
-                <a href="https://stackoverflow.com/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/color/48/000000/stackoverflow.png" />
-
-                    </div>
-                </a>
-                <a href="https://www.kaggle.com/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/windows/32/000000/kaggle.png" />
-
-                    </div>
-                </a>
-                <a href="https://www.mysql.com/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/fluency/48/000000/mysql-logo.png" />
-
-                    </div>
-                </a>
-                <a href="https://soliditylang.org/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/solidity.png" />
-
-                    </div>
-                </a>
-                <a href="https://flask.palletsprojects.com/en/2.1.x/" target="_blank">
-                    <div class="tool">
-                        <img src="https://img.icons8.com/color/48/000000/flask.png" />
-
-                    </div>
-                </a>
-
-
-
-        </div>
-
-    </div>
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
@@ -1098,53 +1102,61 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
         /*$(window).load(function() {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $(".blob1").delay(3000).fadeOut("slow");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $(".blob1").delay(3000).fadeOut("slow");
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $(".blob2").delay(3000).fadeOut("slow");
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $(".preloader").delay(3000).fadeOut("slow");
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               $(".preloadbody").delay(3000).fadeOut("slow");
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           })*/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $(".blob2").delay(3000).fadeOut("slow");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $(".preloader").delay(3000).fadeOut("slow");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $(".preloadbody").delay(3000).fadeOut("slow");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   })*/
     </script>
+</body>
 
 
-    <footer id='contactme'>
-        <span>
+<footer id='contactme'>
+    <span>
             <a href="#">Want to connect, Collaborate, share ideas or enquires? Shoot me a message!</a>
         </span>
-        <img src="./img/logo.png">
-        <ul>
-            <a href="https://www.linkedin.com/in/teddyoweh/ ">
-                <li>
-                    <i class='bx bxl-linkedin'></i>
-                </li>
-            </a>
-            <a href="mailto:teddy@teddyoweh.net">
-                <li>
-                    <i class='bx bxs-envelope'></i>
-                </li>
-            </a>
-            </a>
-            <a href="https://github.com/teddyoweh/ ">
-                <li>
-                    <i class='bx bxl-github'></i>
-                </li>
-            </a>
-            <a href="https://twitter.com/tedddyoweh ">
-                <li>
-                    <i class='bx bxl-twitter'></i>
-                </li>
-            </a>
-            <a href="https://www.instagram.com/teddyoweh_/ ">
-                <li>
-                    <i class='bx bxl-instagram'></i>
-                </li>
-            </a>
+    <img src="./img/logo.png">
+    <ul>
+        <a href="https://www.linkedin.com/in/teddyoweh/ ">
+            <li>
+                <i class='bx bxl-linkedin'></i>
+            </li>
+        </a>
+        <a href="mailto:teddy@teddyoweh.net">
+            <li>
+                <i class='bx bxs-envelope'></i>
+            </li>
+        </a>
+        </a>
+        <a href="https://github.com/teddyoweh/ ">
+            <li>
+                <i class='bx bxl-github'></i>
+            </li>
+        </a>
+        <a href="https://twitter.com/tedddyoweh ">
+            <li>
+                <i class='bx bxl-twitter'></i>
+            </li>
+        </a>
+        <a href="https://www.instagram.com/teddyoweh_/ ">
+            <li>
+                <i class='bx bxl-instagram'></i>
+            </li>
+        </a>
 
 
-        </ul>
-    </footer>
+    </ul>
+</footer>
 
-</body>
+
+</html>
+
+</html>
+
+
+
+<style></style>
 
 </html>
 
