@@ -267,13 +267,6 @@ canvas {
     z-index: 9999;
 }
 
-.site-navbar.active-navbar {
-    background-color: #d9dee4;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    opacity: 0.7;
-}
-
 .site-navbar .logo-content .logo {
     width: 95px;
     pointer-events: all;
@@ -364,14 +357,13 @@ canvas {
 }
 
 .site-navbar .main-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     height: 100vh;
     background-color: #1d3147;
     z-index: -1;
-    opacity: 0;
     visibility: hidden;
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
@@ -784,7 +776,7 @@ canvas {
 
 .slideshow__slide-caption-text .slideshow__slide-btn {
     display: inline-block;
-    color: #fff;
+    color: #748daa;
     padding: 0;
     font-weight: 500;
     letter-spacing: 3px;
@@ -801,7 +793,7 @@ canvas {
     margin: 0;
     width: 50px;
     height: 50px;
-    border: 1px solid #868f90;
+    border: 2px solid #748daa;
     border-radius: 1.625rem;
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 }
@@ -845,9 +837,9 @@ canvas {
     right: 0;
     bottom: 0;
     padding: 0.92rem 0;
-    color: #fff;
+    color: #748daa;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 2px;
     line-height: 1.6;
     text-align: center;
@@ -1025,7 +1017,7 @@ canvas {
     text-align: center;
     margin-bottom: 10px;
     transition: all 300ms;
-    text-shadow: 1px 4px 3px #667b95;
+    text-shadow: 2px 0px 8px #667b95, 1px 0px 2px;
 }
 
 .header-follow ul li .fa {
@@ -3483,7 +3475,7 @@ iframe {
     font-size: 13px;
     font-weight: 200;
     text-align: center;
-    color: #16c1b7;
+    color: #52749a;
     cursor: pointer;
     display: block;
     z-index: 1;
@@ -3493,7 +3485,7 @@ iframe {
 }
 
 .progress-parent svg.progress-circle path {
-    stroke: #16c1b7;
+    stroke: #7594b7;
     stroke-width: 4px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -3601,13 +3593,8 @@ iframe {
     }
     .site-navbar .main-nav {
         overflow-y: auto;
-        margin-top: 94px;
-        height: calc(100vh - 94px);
-    }
-    .site-navbar.active-navbar .main-nav {
-        overflow-y: auto;
-        margin-top: 80px;
-        height: calc(100vh - 80px);
+        /* margin-top: 42px; */
+        height: 100vh;
     }
     .site-navbar .main-nav .menu-content {
         align-items: center;
