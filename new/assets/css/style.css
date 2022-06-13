@@ -5,6 +5,13 @@
     height: 100px;
     width: 100px;
     object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navbar .navbar-content .logo-content .logo img:hover {
+    transition: 0.3s;
+    transform: rotate(180deg);
 }
 
 .home-text {
@@ -49,6 +56,20 @@
     animation: textOut .5s ease;
 }
 
+.bigbox {
+    padding: 10px;
+    background: white;
+    width: 723px;
+    height: 178vh;
+    position: absolute;
+    right: -38%;
+    transform: rotate(39deg);
+    top: -71%;
+    /* transform: translateX(10px); */
+    border-radius: 69px;
+    box-shadow: -41px 31px 9px #cdd5e0;
+}
+
 @keyframes textIn {
     0% {
         transform: translateY(100%);
@@ -64,5 +85,11 @@
     }
     100% {
         transform: translateY(-100%);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .bigbox {
+        display: none;
     }
 }
