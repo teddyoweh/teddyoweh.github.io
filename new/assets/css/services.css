@@ -36,6 +36,7 @@
     justify-content: center;
     background: white;
     width: 97%;
+    box-shadow: 0px 0px 3px grey;
 }
 
 .workpage .workflow .workflow-big {
@@ -122,6 +123,7 @@
     background: white;
     padding: 10px 34px;
     width: 97%;
+    box-shadow: 0px 0px 3px grey;
 }
 
 .workpage .workflow .service-content .service-item {
@@ -131,7 +133,7 @@
 }
 
 .workpage .workflow .service-content .service-item .workflow-item {
-    width: max-content;
+    width: 28%;
     margin-top: 2%;
 }
 
@@ -151,17 +153,18 @@
 }
 
 .workpage .workflow .service-content .service-item .workflow-item .w-title {
-    font-size: 32px;
+    font-size: 26px;
     font-family: Poppins;
     color: #95abc6;
     font-weight: 600;
 }
 
 .workpage .workflow .service-content .service-item .workflow-item .w-desc {
-    font-size: 20px;
+    font-size: 17px;
     font-family: Poppins;
     color: #b7c4d3;
     font-weight: 600;
+    text-align: left;
 }
 
 @media screen and (max-width: 762px) {
