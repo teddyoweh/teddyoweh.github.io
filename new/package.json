@@ -21,6 +21,7 @@
     "homepage": "https://github.com/teddyoweh/teddyoweh.github.io#readme",
     "dependencies": {
         "bcryptjs": "^2.4.3",
+        "compression": "^1.7.4",
         "connect-flash": "^0.1.1",
         "connect-mongodb-session": "^3.1.1",
         "ejs": "^3.1.3",
@@ -28,6 +29,7 @@
         "express-ejs-layouts": "^2.5.0",
         "express-session": "^1.17.2",
         "googleapis": "^63.0.0",
+        "helmet": "^5.1.0",
         "jsonwebtoken": "^8.5.1"
     },
     "devDependencies": {
