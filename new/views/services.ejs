@@ -1,328 +1,252 @@
+<body class="cursor-effect personal-page">
 
+    <!-- ========== Start Cursor ========== -->
 
-    <body class="services-page cursor-effect">
+    <div id="cursor">
+        <div id="circle"></div>
+    </div>
+    <!-- ========== End Cursor ========== -->
 
-        <!-- ========== Start Cursor ========== -->
+    <!-- ========== Start Preloader ========== -->
 
-        <div id="cursor">
-            <div id="circle"></div>
-        </div>
+    <div class="preloader">
+        <div class="blob-1"></div>
+        <div class="blob-2"></div>
+    </div>
+    <!--========== Start Animation ==========-->
+    <div class="blob">
+        <!-- This SVG is from https://codepen.io/Ali_Farooq_/pen/gKOJqx -->
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
+        <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
+        </svg>
+    </div>
 
-        <!-- ========== End Cursor ========== -->
+    <!--==========End Preloader==========-->
 
-         <!-- ========== Start Preloader ========== -->
+    <!-- ========== Start Navbar ========== -->
 
-         <div class="preloader">
-            <span style="color:#fff; font-weight: bolder; font-size: 70px; font-family: 'Blaka', cursive;">
-           JO
-       </span>
-         </div>
-
-         <!-- ========== End Preloader ========== -->
-
-        <!-- ========== Start Navbar ========== -->
-
-        <div class="site-navbar dl-container">
-            <div class="navbar-content d-flex w-100 align-items-center justify-content-between">
-                <div class="logo-content">
-                    <div class="logo">
-                        <a href="/">
-                            <span style="color:#fff; font-weight: bolder; font-size: 70px; font-family: 'Blaka', cursive;">
-                                JO
-                            </span>
-                        </a>
+    <div class="navbar site-navbar">
+        <div class="navbar-content  d-flex w-100 align-items-center justify-content-between">
+            <div class="logo-content ">
+                <div class="logo">
+                    <a href="/">
+                        <img src="assets/images/icons/teddy.png" alt="teddy oweh logo">
+                    </a>
+                </div>
+            </div>
+            <div class="menu-icon d-flex align-items-center">
+                <div class="menu-txt-btn">
+                    <span class="menu-txt" data-hover="open">Menu</span>
+                    <span class="close-txt">Close</span>
+                </div>
+                <div class="icon d-flex justify-content-center align-items-center parallax-item">
+                    <div class="bar-content">
+                        <span class="top-bar"></span>
+                        <span class="bottom-bar"></span>
                     </div>
                 </div>
-                <div class="menu-icon d-flex align-items-center">
-                    <div class="menu-txt-btn">
-                        <span class="menu-txt" data-hover="open">Menu</span>
-                        <span class="close-txt">Close</span>
-                    </div>
-                    <div class="icon d-flex justify-content-center align-items-center parallax-item">
-                        <div class="bar-content">
-                            <span class="top-bar"></span>
-                            <span class="bottom-bar"></span>
-                        </div>
-                    </div>
-                </div>
-                <nav class="main-nav d-flex align-items-center">
-                    <div class="menu-bg-title">Menu</div>
+            </div>
+            <nav class="main-nav d-flex align-items-center">
+                <center>
+                    <div class="menu-bg-title" id="menutext">Menu</div>
                     <ul class="menu-content list-unstyled p-relative d-flex flex-column justify-content-center w-100 h-100">
-                        <li>
+                        <li onmouseover="newmenutext('Home')">
                             <a href="/">
                                 <span class="menu-title">Home</span>
-                                <span class="menu-number">01</span>
+                                <span class="menu-number">-</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/about">
-                                <span class="menu-title">About</span>
-                                <span class="menu-number">02</span>
+                        <li onmouseover="newmenutext('About')">
+                            <a href=" /about ">
+                                <span class="menu-title ">About</span>
+                                <span class="menu-number ">-</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/services">
-                                <span class="menu-title">Services</span>
-                                <span class="menu-number">03</span>
+                        <li onmouseover="newmenutext( 'Services') ">
+                            <a href="/services ">
+                                <span class="menu-title ">Services</span>
+                                <span class="menu-number ">-</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/portfolio">
-                                <span class="menu-title">Portfolio</span>
-                                <span class="menu-number">04</span>
+                        <li onmouseover="newmenutext( 'Portfolio') ">
+                            <a href=" /portfolio ">
+                                <span class="menu-title ">Portfolio</span>
+                                <span class="menu-number ">-</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/blog">
-                                <span class="menu-title">Blog</span>
-                                <span class="menu-number">05</span>
+
+                        <li onmouseover="newmenutext('Contact')">
+                            <a href=" /contact ">
+                                <span class="menu-title ">Contact</span>
+                                <span class="menu-number ">-</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/contact">
-                                <span class="menu-title">Contact</span>
-                                <span class="menu-number">06</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="assets/Profile.pdf">
-                                <span class="menu-title">Resume</span>
-                                <span class="menu-number">07</span>
+                        <li onmouseover="newmenutext( 'Resume') ">
+                            <a href="assets/Profile.pdf ">
+                                <span class="menu-title ">Resume</span>
+                                <span class="menu-number ">-</span>
                             </a>
                         </li>
                     </ul>
-                </nav>
-                <div class="menu-overlay"></div>
+                </center>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ========== End Navbar ========== -->
+
+    <!-- ========== Start Header ========== -->
+
+    <div class="workpage">
+        <div class="workflow">
+
+            <div class="workflow-header">
+                <div class="w-slash"></div>
+                <div class="w-head">Workflow</div>
+            </div>
+            <div class="workflow-content">
+                <div class="workflow-numbers">
+                    <span>01.</span>
+                    <div class="joinbands"></div>
+                    <span>02.</span>
+                    <div class="joinbands"></div>
+                    <span>03.</span>
+                    <div class="joinbands"></div>
+                    <span>04.</span>
+                </div>
+                <div class="workflow-big">
+                    <div class="workflow-item">
+
+                        <div class="img-brac-w"><img src='assets/images/icons/idea.png'></div>
+                        <div class="w-title">Problem</div>
+                        <div class="w-desc">Analyzing and Understanding the problem</div>
+                    </div>
+
+                    <div class="workflow-item">
+
+                        <div class="img-brac-w"><img src='assets/images/icons/think.png'></div>
+                        <div class="w-title">Ideate</div>
+                        <div class="w-desc">Work through the problem manually. Simplify and Optimize the steps then identify a recurrence relation</div>
+                    </div>
+
+                    <div class="workflow-item">
+
+                        <div class="img-brac-w"><img src='assets/images/icons/puzzle.png'></div>
+                        <div class="w-title">Define</div>
+                        <div class="w-desc">Identify the base cases, Write pseudocode, Test small inputs</div>
+                    </div>
+
+                    <div class="workflow-item">
+
+                        <div class="img-brac-w"><img src='assets/images/icons/pack-code.png'></div>
+                        <div class="w-title">Implement</div>
+                        <div class="w-desc">Translate pseudocode into code and debug. Finalize</div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
+        <div class="workflow">
 
-        <!-- ========== End Navbar ========== -->
-        
-        <!-- ========== Start Header ========== -->
-
-        <header class="header">
-            <div class="dl-container">
-                <div class="header-content">
-                    <p class="subtitle"> Services</p>
-                    <h1 class="title">Services I render...</h1>
-                </div>
+            <div class="workflow-header">
+                <div class="w-slash"></div>
+                <div class="w-head">Services</div>
             </div>
-        </header>
+            <div class="service-content">
+                <div class="service-item">
+                    <div class="workflow-item">
 
-        <!-- ========== End Header ========== -->
-
-        <div class="content">
-
-            <!-- ========== End Gallery Section ========== -->
-
-            <!-- ========== Start Services Section ========== -->
-
-            <section class="services">
-                <div class="container d-flex flex-column mb-70">
-                    <p class="sub-heading">My Skills & Services</p>
-                    <h2 class="heading"> * Services I render *</h2>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 item">
-                            <div class="service-item">
-                                <div class="service-content">
-                                    <div class="icon">
-                                        <img class="img-fluid" src="assets/images/icons/creativity.png" alt>
-                                    </div>
-                                    <div class="service-details">
-                                        <h4>Future Idea / Execution</h4>
-                                        <p>I am so enthusiastic about the Idea and Execution of the Future of Technology, Physics, Chemistry, Nature.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 item">
-                            <div class="service-item">
-                                <div class="service-content">
-                                    <div class="icon">
-                                        <img class="img-fluid" src="assets/images/icons/branding.png" alt>
-                                    </div>
-                                    <div class="service-details">
-                                        <h4>API Dev</h4>
-                                        <p>I create APIs with the rols of being Backend Developer (Fullstack) for series of unique Firms | Ideas | Startups.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 item">
-                            <div class="service-item">
-                                <div class="service-content">
-                                    <div class="icon">
-                                        <img class="img-fluid" src="assets/images/icons/customize.png" alt>
-                                    </div>
-                                    <div class="service-details">
-                                        <h4>Plugins | Modules Dev</h4>
-                                        <p>I work as a Backend Developer for the creations of Plugins, Extensions and node modules creation .</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 item">
-                            <div class="service-item">
-                                <div class="service-content">
-                                    <div class="icon">
-                                        <img class="img-fluid" src="assets/images/icons/app-development.png" alt>
-                                    </div>
-                                    <div class="service-details">
-                                        <h4>Mobile Dev (Full Stack)</h4>
-                                        <p>I work as a Mobile App Developer (Fullstack) for series of unique Firms | Ideas | Startups.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 item">
-                            <div class="service-item">
-                                <div class="service-content">
-                                    <div class="icon">
-                                        <img class="img-fluid" src="assets/images/icons/coding.png" alt>
-                                    </div>
-                                    <div class="service-details">
-                                        <h4>Web Dev (Full Stack)</h4>
-                                        <p>I work as a Web Developer Developer (Fullstack) for series of unique Firms | Ideas | Startups.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 item">
-                            <div class="service-item">
-                                <div class="service-content">
-                                    <div class="icon">
-                                        <img class="img-fluid" src="assets/images/icons/planing.png" alt>
-                                    </div>
-                                    <div class="service-details">
-                                        <h4>Web3 Dev (Blockchain)</h4>
-                                        <p>I work as a Blockchain Developer (Fullstack) for series of unique Firms | Ideas | Startups</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 item">
-                            <div class="service-item">
-                                <div class="service-content">
-                                    <div class="icon">
-                                        <img class="img-fluid" src="assets/images/icons/planing.png" alt>
-                                    </div>
-                                    <div class="service-details">
-                                        <h4>Smart Contracts </h4>
-                                        <p>I work as a Blockchain Developer for writing and creation of smart contracts and verifying of it on the preffered blockchain</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="img-brac-w"><img src='assets/images/icons/5.png'></div>
+                        <div class="w-title">Machine Learning Development</div>
+                        <div class="w-desc">Equipped with </div>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="img-brac-w"><img src='assets/images/icons/1.png'></div>
+                        <div class="w-title">API Development</div>
+                        <div class="w-desc">Analyzing and Understanding the problem</div>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="img-brac-w"><img src='assets/images/icons/3.png'></div>
+                        <div class="w-title">Fullstack Development</div>
+                        <div class="w-desc">Analyzing and Understanding the problem</div>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="img-brac-w"><img src='assets/images/icons/6.png'></div>
+                        <div class="w-title">Cloud Deployment</div>
+                        <div class="w-desc">Analyzing and Understanding the problem</div>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="img-brac-w"><img src='assets/images/icons/7.png'></div>
+                        <div class="w-title">Algorithm Design & Development</div>
+                        <div class="w-desc">Analyzing and Understanding the problem</div>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="img-brac-w"><img src='assets/images/icons/4.png'></div>
+                        <div class="w-title">Packages/Modules/Plugins</div>
+                        <div class="w-desc">Analyzing and Understanding the problem</div>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="img-brac-w"><img src='assets/images/icons/2.png'></div>
+                        <div class="w-title">Version Control</div>
+                        <div class="w-desc">Analyzing and Understanding the problem</div>
                     </div>
                 </div>
-            </section>
 
-            <!-- ========== End Services Section ========== -->
 
-            <!-- ========== Start Contact Us Section ========== -->
 
-            <section class="contact-section">
-                <div class="container">
-                    <div class="contact-wrap d-flex justify-content-between">
-                        <div class="d-flex flex-column">
-                            <p class="sub-heading">Get In Touch</p>
-                            <h2 class="heading">Wouldn't be bad creating something great together...</h2>
-                        </div>
-                        <div class="btn-box d-flex justify-content-end align-items-center">
-                            <a class="contact-btn align-items-center" href="/contact">
-                                <span class="btn-content d-flex align-items-center">
-                                    <span class="btn-circles">
-                                        <span class="btn-circle"></span>
-                                        <span class="btn-small-circle d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.214 23.057">
-                                                <g fill="none" stroke-linecap="square" stroke-width="1.5">
-                                                    <path d="M23.528 11.685h-20M16.685 19.528l8-8-8-8"></path>
-                                                </g>
-                                            </svg>
-                                        </span>
-                                    </span>
-                                    <span class="btn-txt">Contact Me</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ========== End Contact Us Section ========== -->
-
+            </div>
         </div>
+    </div>
 
-        <!-- ========== Start Footer Section ========== -->
+    <!-- ========== End Header ========== -->
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <div class="left-area">
-                            <div class="footer-social-media">
-                                <ul class="list-unstyled d-flex">
-                                    <li>
-                                        <a class="parallax-item not-hide-cursor" href="https://github.com/johnoseni1"><i class="fa fa-github"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="parallax-item not-hide-cursor" href="https://www.linkedin.com/in/john-oseni-4b8b001b0/"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="parallax-item not-hide-cursor" href="https://www.instagram.com/johnoseni5/"><i class="fa fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="parallax-item not-hide-cursor" href="https://twitter.com/johnoseni4"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="parallax-item not-hide-cursor" href="https://www.youtube.com/channel/UCK_pOA0o79rhyKk5EdJj_2Q"><i class="fa fa-youtube"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="right-area">
-                            <p>2022 &copy; Created By <a class="cursor-alter not-hide-cursor" href="/">John Oseni</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    <div class="content">
 
-        <!-- ========== End Footer Section ========== -->
+        <!-- ========== End Gallery Section ========== -->
 
-        <!-- ========== Start Scroll To Top Section ========== -->
+        <!-- ========== Start Services Section ========== -->
 
-        <div class="progress-parent">
-            <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+
+
+
+
+    </div>
+
+    <!-- ========== Start Footer Section ========== -->
+
+
+    <!-- ========== Start Scroll To Top Section ========== -->
+
+    <div class="progress-parent">
+        <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
             </svg>
-        </div>
+    </div>
 
-        <!-- ========== End Scroll To Top Section ========== -->
+    <!-- ========== End Scroll To Top Section ========== -->
 
-        <!-- ========== Js ========== -->
+    <!-- ========== Js ========== -->
 
-        <!-- Jquery -->
-        <script src="assets/js/jquery-3.2.1.min.js"></script>
-        <!-- popper -->
-        <script src="assets/js/popper.min.js"></script>
-        <!-- Bootstrap js -->
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Libs and Plugins JS -->
-		<script src="assets/js/gsap/gsap.min.js"></script>
-		<script src="assets/js/gsap/ScrollToPlugin.min.js"></script>
-		<script src="assets/js/gsap/ScrollTrigger.min.js"></script>
-        <!-- Owl Carousel js -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- Bootstrap js -->
-        <script src="assets/js/magnific-popup.min.js"></script>
-        <!-- Preloader -->
-        <script src="assets/js/preloader.js"></script>
-        <!-- Scroll To Top js -->
-        <script src="assets/js/scrolltotop.js"></script>
-        <!-- Main custom-->
-        <script src="assets/js/custom.js"></script>
-   
-    </body>
+    <!-- Jquery -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <!-- popper -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Libs and Plugins JS -->
+    <script src="assets/js/gsap/gsap.min.js"></script>
+    <script src="assets/js/gsap/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/gsap/ScrollTrigger.min.js"></script>
+    <!-- Owl Carousel js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- Preloader -->
+    <script src="assets/js/preloader.js"></script>
+    <!-- Scroll To Top js -->
+    <script src="assets/js/scrolltotop.js"></script>
+    <!-- Main custom-->
+    <script src="assets/js/custom.js"></script>
+
+</body>
