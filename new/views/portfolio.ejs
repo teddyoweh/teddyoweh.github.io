@@ -1,35 +1,35 @@
-
-
-   <body class="portfolio-page work-style2 cursor-effect">
-
+<body class="portfolio-page work-style2 cursor-effect">
     <!-- ========== Start Cursor ========== -->
 
     <div id="cursor">
         <div id="circle"></div>
     </div>
-
     <!-- ========== End Cursor ========== -->
 
-     <!-- ========== Start Preloader ========== -->
+    <!-- ========== Start Preloader ========== -->
 
-     <div class="preloader">
-        <span style="color:#fff; font-weight: bolder; font-size: 70px; font-family: 'Blaka', cursive;">
-       JO
-   </span>
-     </div>
+    <div class="preloader">
+        <div class="blob-1"></div>
+        <div class="blob-2"></div>
+    </div>
+    <!--========== Start Animation ==========-->
+    <div class="blob">
+        <!-- This SVG is from https://codepen.io/Ali_Farooq_/pen/gKOJqx -->
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
+        <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
+        </svg>
+    </div>
 
-     <!-- ========== End Preloader ========== -->
+    <!--==========End Preloader==========-->
 
     <!-- ========== Start Navbar ========== -->
 
-    <div class="site-navbar dl-container">
-        <div class="navbar-content d-flex w-100 align-items-center justify-content-between">
-            <div class="logo-content">
+    <div class="navbar site-navbar">
+        <div class="navbar-content  d-flex w-100 align-items-center justify-content-between">
+            <div class="logo-content ">
                 <div class="logo">
                     <a href="/">
-                        <span style="color:#fff; font-weight: bolder; font-size: 70px; font-family: 'Blaka', cursive;">
-                            JO
-                        </span>
+                        <img src="assets/images/icons/teddy.png" alt="teddy oweh logo">
                     </a>
                 </div>
             </div>
@@ -46,283 +46,156 @@
                 </div>
             </div>
             <nav class="main-nav d-flex align-items-center">
-                <div class="menu-bg-title">Menu</div>
-                <ul class="menu-content list-unstyled p-relative d-flex flex-column justify-content-center w-100 h-100">
-                    <li>
-                        <a href="/">
-                            <span class="menu-title">Home</span>
-                            <span class="menu-number">01</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/about">
-                            <span class="menu-title">About</span>
-                            <span class="menu-number">02</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/services">
-                            <span class="menu-title">Services</span>
-                            <span class="menu-number">03</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/portfolio">
-                            <span class="menu-title">Portfolio</span>
-                            <span class="menu-number">04</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/blog">
-                            <span class="menu-title">Blog</span>
-                            <span class="menu-number">05</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contact">
-                            <span class="menu-title">Contact</span>
-                            <span class="menu-number">06</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="assets/Profile.pdf">
-                            <span class="menu-title">Resume</span>
-                            <span class="menu-number">07</span>
-                        </a>
-                    </li>
-                </ul>
+                <center>
+                    <div class="menu-bg-title" id="menutext">Menu</div>
+                    <ul class="menu-content list-unstyled p-relative d-flex flex-column justify-content-center w-100 h-100">
+                        <li onmouseover="newmenutext('Home')">
+                            <a href="/">
+                                <span class="menu-title">Home</span>
+                                <span class="menu-number">-</span>
+                            </a>
+                        </li>
+                        <li onmouseover="newmenutext('About')">
+                            <a href=" /about ">
+                                <span class="menu-title ">About</span>
+                                <span class="menu-number ">-</span>
+                            </a>
+                        </li>
+                        <li onmouseover="newmenutext( 'Services') ">
+                            <a href="/services ">
+                                <span class="menu-title ">Services</span>
+                                <span class="menu-number ">-</span>
+                            </a>
+                        </li>
+                        <li onmouseover="newmenutext( 'Portfolio') ">
+                            <a href=" /portfolio ">
+                                <span class="menu-title ">Portfolio</span>
+                                <span class="menu-number ">-</span>
+                            </a>
+                        </li>
+
+                        <li onmouseover="newmenutext('Contact')">
+                            <a href=" /contact ">
+                                <span class="menu-title ">Contact</span>
+                                <span class="menu-number ">-</span>
+                            </a>
+                        </li>
+                        <li onmouseover="newmenutext( 'Resume') ">
+                            <a href="assets/Profile.pdf ">
+                                <span class="menu-title ">Resume</span>
+                                <span class="menu-number ">-</span>
+                            </a>
+                        </li>
+                    </ul>
+                </center>
             </nav>
-            <div class="menu-overlay"></div>
         </div>
     </div>
 
     <!-- ========== End Navbar ========== -->
-    
-    <!-- ========== Start Header ========== -->
 
-    <header class="header">
-        <div class="dl-container">
-            <div class="header-content">
-                <p class="subtitle">Our Portfolio</p>
-                <h1 class="title">Our Best Works</h1>
+
+    <div class="workpage">
+        <div class="workflow">
+
+            <div class="workflow-header">
+                <div class="w-slash"></div>
+                <div class="w-head">Projects</div>
+            </div>
+            <div class="portfolio-content">
+                <div class="portmain">
+                    <div class="porthead"> <img src="assets/images/omark.png" alt="omark description"></div>
+                    <div class="smashdash"></div>
+                    <div class="port-item">
+
+                        <div class="portcontent">
+                            <h1>Omark</h1>
+                            <div class="portstack">
+
+
+
+
+                                <img src="https://img.icons8.com/offices/40/000000/php-logo.png" />
+
+
+
+
+
+
+
+                                <img src="https://img.icons8.com/color/40/000000/visual-studio--v2.png" />
+
+
+
+                            </div>
+                            <div class="portword">Omark is a Python library that implements a linear search algorithm with a facial recognition module, on a database of pictures. It captures a picture of a group of people and determines who is absent from the picture, who
+                                is present in the picture and how many people are in the picture. An implementation of this in a real-world scenario is in taking class attendances, it captures a picture of a classroom and then performs a linear search
+                                algorithm on a database to determine which student is in class and which student isn't.</div>
+                            <div class="portsource">
+                                <a><i class='bx bxs-package'></i> Package</a>
+                                <a href=""><i class='bx bx-code'></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portmain">
+                    <div class="porthead"><img src="assets/images/omark.png" alt="omark description"></div>
+                    <div class="smashdash"></div>
+                    <div class="port-item">
+
+                        <div class="portcontent">
+                            <h1>Omark</h1>
+                            <div class="portstack">
+
+
+
+
+                                <img src="https://img.icons8.com/offices/40/000000/php-logo.png" />
+
+
+
+
+
+
+
+                                <img src="https://img.icons8.com/color/40/000000/visual-studio--v2.png" />
+
+
+
+                            </div>
+                            <div class="portword">Omark is a Python library that implements a linear search algorithm with a facial recognition module, on a database of pictures. It captures a picture of a group of people and determines who is absent from the picture, who
+                                is present in the picture and how many people are in the picture. An implementation of this in a real-world scenario is in taking class attendances, it captures a picture of a classroom and then performs a linear search
+                                algorithm on a database to determine which student is in class and which student isn't.</div>
+                            <div class="portsource">
+                                <a><i class='bx bxs-package'></i> Package</a>
+                                <a href=""><i class='bx bx-code'></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
             </div>
         </div>
-    </header>
-
-    <!-- ========== End Header ========== -->
-
-    <div class="content">
-
-        <!-- ========== Start Portfolio Section ========== -->
-
-        <section class="portfolio">
-            <div class="dl-container portfolio-container">
-                <div class="portfolio-filter">
-                    <div class="filter-wrap d-flex align-items-center">
-                        <div class="filter">
-                            <button type="button" data-filter="*" class="active">All</button>
-                            <button type="button" data-filter=".photography">Blockchain</button>
-                            <button type="button" data-filter=".architecture">Web Dev</button>
-                            <button type="button" data-filter=".product">mobile Dev</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio Items Starts -->
-                <div class="portfolio-content">
-                    <div class="grid row">
-                        <!-- Portfolio Item Starts -->
-                        <div class="grid__item over-hidden architecture col-12 col-md-6 col-lg-4">
-                            <a class="not-hide-cursor d-block" href="assets/images/port1.png">
-                                <img class="img-fluid cover-bg" src="assets/images/port1.png" alt="Phone Case">  
-                            </a>
-                            <div class="item-info">
-                                <h5>Blockchanin/Communication</h5>
-                                <a class="cursor-alter" href="https://safechainmet.herokuapp.com/">
-                                    <h4>Safechain meet</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item Ends -->
-
-                        <!-- Portfolio Item Starts -->
-                        <div class="grid__item architecture col-12 col-md-6 col-lg-4">
-                            <a class="not-hide-cursor d-block" href="assets/images/port2.png">
-                                <img class="img-fluid cover-bg" src="assets/images/port2.png" alt="Red Sofa">  
-                            </a>
-                            <div class="item-info">
-                                <h5>Education</h5>
-                                <a class="cursor-alter" href="http://marcello-site.vercel.app/">
-                                    <h4>University of lawsonomy</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item Ends -->
-
-                        <!-- Portfolio Item Starts -->
-                        <div class="grid__item photography col-12 col-md-6 col-lg-4">
-                            <a class="not-hide-cursor d-block" href="assets/images/port3.png" >
-                                <img class="img-fluid cover-bg" src="assets/images/port3.png" alt="Sleep Walker">  
-                            </a>
-                            <div class="item-info">
-                                <h5>Work</h5>
-                                <a class="cursor-alter" href="project3.html">
-                                    <h4>Forbe lists of the richest people</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item Ends -->
-
-                        <!-- Portfolio Item Starts -->
-                        <div class="grid__item product col-12 col-md-6 col-lg-4">
-                            <a class="not-hide-cursor d-block" href="assets/images/port5.png">
-                                <img class="img-fluid cover-bg" src="assets/images/port5.png" alt="New Sound">  
-                            </a>
-                            <div class="item-info">
-                                <h5>Blockchain</h5>
-                                <a class="cursor-alter" href="https://coinratecap.com/">
-                                    <h4>CoinrateCap</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item Ends -->
-
-                        <!-- Portfolio Item Starts -->
-                        <div class="grid__item photography col-12 col-md-6 col-lg-4">
-                            <a class="not-hide-cursor d-block" href="assets/images/port4.png">
-                                <img class="img-fluid cover-bg" src="assets/images/port4.png" alt="Magic Kitz">  
-                            </a>
-                            <div class="item-info">
-                                <h5>Test</h5>
-                                <a class="cursor-alter" href="https://nlp-video-playerme.vercel.app/">
-                                    <h4>NLP Video Player</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item Ends -->
-
-                        <!-- Portfolio Item Starts -->
-                        <div class="grid__item pen product col-12 col-md-6 col-lg-4">
-                            <a class="not-hide-cursor d-block" href="assets/images/port6.png">
-                                <img class="img-fluid cover-bg" src="assets/images/port6.png" alt="Colorful Pen">  
-                            </a>
-                            <div class="item-info">
-                                <h5>Blockchain Play to Earn</h5>
-                                <a class="cursor-alter" href="http://crypto-nights.com/">
-                                    <h4>Crypto Nights</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item Ends -->
-
-                         <!-- Portfolio Item Starts -->
-                         <div class="grid__item pen product col-12 col-md-6 col-lg-4">
-                            <a class="not-hide-cursor d-block" href="assets/images/port7.png">
-                                <img class="img-fluid cover-bg" src="assets/images/port7.png" alt="Colorful Pen">  
-                            </a>
-                            <div class="item-info">
-                                <h5> Npm Module</h5>
-                                <a class="cursor-alter" href="https://www.npmjs.com/package/webitspay-node-sdk">
-                                    <h4>NPMJs Modules</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item Ends -->
-
-                    </div>
-                </div>
-                <!-- Portfolio Items Ends -->
-                <div class="btn-box d-flex justify-content-center align-items-center">
-                    <a class="contact-btn align-items-center" href="https://github.com/johnoseni1">
-                        <span class="btn-content d-flex align-items-center">
-                            <span class="btn-circles">
-                                <span class="btn-circle"></span>
-                                <span class="btn-small-circle d-flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.214 23.057">
-                                        <g fill="none" stroke-linecap="square" stroke-width="1.5">
-                                            <path d="M23.528 11.685h-20M16.685 19.528l8-8-8-8"></path>
-                                        </g>
-                                    </svg>
-                                </span>
-                            </span>
-                            <span class="btn-txt">Check More...</span>
-                        </span>
-                    </a>
-                </div>
+        <center>
+            <div style="padding-top: 0;" class="slideshow__slide-caption-text">
+                <a class="slideshow__slide-btn align-items-center" href="/contact">
+                    <span class="btn-content d-flex align-items-center">
+                <span class="btn-circles">
+                    <span class="btn-circle"></span>
+                    <span class="btn-small-circle d-flex">
+                         
+                    </span>
+                    </span>
+                    <span class="btn-txt">Contact me</span>
+                    </span>
+                </a>
             </div>
-        </section>
-
-        <!-- ========== End Portfolio Section ========== -->
-
-        <!-- ========== Start Contact Us Section ========== -->
-
-        <section class="contact-section">
-            <div class="container">
-                <div class="contact-wrap d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                        <p class="sub-heading">Get In Touch</p>
-                        <h2 class="heading">Wouldn't be bad creating something great together...</h2>
-                    </div>
-                    <div class="btn-box d-flex justify-content-end align-items-center">
-                        <a class="contact-btn align-items-center" href="/contact">
-                            <span class="btn-content d-flex align-items-center">
-                                <span class="btn-circles">
-                                    <span class="btn-circle"></span>
-                                    <span class="btn-small-circle d-flex">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.214 23.057">
-                                            <g fill="none" stroke-linecap="square" stroke-width="1.5">
-                                                <path d="M23.528 11.685h-20M16.685 19.528l8-8-8-8"></path>
-                                            </g>
-                                        </svg>
-                                    </span>
-                                </span>
-                                <span class="btn-txt">Contact Me</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== End Contact Us Section ========== -->
-
+        </center>
     </div>
-
-    <!-- ========== Start Footer Section ========== -->
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div class="left-area">
-                        <div class="footer-social-media">
-                            <ul class="list-unstyled d-flex">
-                                <li>
-                                    <a class="parallax-item not-hide-cursor" href="https://github.com/johnoseni1"><i class="fa fa-github"></i></a>
-                                </li>
-                                <li>
-                                    <a class="parallax-item not-hide-cursor" href="https://www.linkedin.com/in/john-oseni-4b8b001b0/"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a class="parallax-item not-hide-cursor" href="https://www.instagram.com/johnoseni5/"><i class="fa fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a class="parallax-item not-hide-cursor" href="https://twitter.com/johnoseni4"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a class="parallax-item not-hide-cursor" href="https://www.youtube.com/channel/UCK_pOA0o79rhyKk5EdJj_2Q"><i class="fa fa-youtube"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="right-area">
-                        <p>2022 &copy; Created By <a class="cursor-alter not-hide-cursor" href="/index">John Oseni</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ========== End Footer Section ========== -->
 
     <!-- ========== Start Scroll To Top Section ========== -->
 
