@@ -37,6 +37,6 @@ app.use(function(req, res, next) {
 //------------ Routes ------------//
 app.use('/', require('./routes/index'));
 
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3007;
 
 app.listen(PORT, console.log(`Server running on PORT ${PORT}`));
