@@ -1,0 +1,139 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about-section .about-content {
+    background: #ffffff;
+    width: 90%;
+    height: 80vh;
+    box-shadow: 0px 0px 12px #c1c6cc;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.about-section .about-content .about-header {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 45px;
+    font-family: 'Poppins';
+    color: #748daa;
+    border-style: solid;
+    border-width: 0px 0px 1px;
+    width: 77%;
+    margin-bottom: 2%;
+}
+
+.about-section .about-content .about-header strong {}
+
+.about-section .about-content .about-main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.about-section .about-content .about-main .about-teddy {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+.about-section .about-content .about-main .about-teddy .first-line {
+    font-size: 32px;
+    font-family: 'Poppins';
+    color: #748daa;
+    font-weight: 500;
+}
+
+.about-section .about-content .about-main .about-teddy .second-line {
+    font-size: 19px;
+    font-family: 'Poppins';
+    color: #a0b1c5;
+    font-weight: 500;
+    margin-top: 2%;
+}
+
+.about-section .about-content .about-main .about-img {
+    box-shadow: 40px 40px 3px #d9dee4;
+    border-radius: 20px;
+    background: transparent;
+}
+
+.about-section .about-content .about-main .about-img img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    /* display: none; */
+    box-shadow: 20px 20px 3px #bcc3cc;
+}
+
+@media screen and (max-width: 900px) {
+    .about-section .about-content {
+        height: max-content;
+        position: relative;
+        top: 15%;
+    }
+    .about-section .about-content .about-header {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 36px;
+        font-family: 'Poppins';
+        color: #748daa;
+        border-style: solid;
+        border-width: 0px 0px 1px;
+        width: 77%;
+        margin-bottom: 2%;
+    }
+    .about-section .about-content .about-header strong {}
+    .about-section .about-content .about-main {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about-section .about-content .about-main .about-teddy {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        margin-top: 2%;
+        width: 100%;
+    }
+    .about-section .about-content .about-main .about-teddy .first-line {
+        font-size: 21px;
+        font-family: 'Poppins';
+        color: #748daa;
+        font-weight: 500;
+        /* PADDING: 12px; */
+        /* margin-top: 2%; */
+    }
+    .about-section .about-content .about-main .about-teddy .second-line {
+        font-size: 15px;
+        font-family: 'Poppins';
+        color: #a0b1c5;
+        font-weight: 500;
+    }
+    .about-section .about-content .about-main .about-img {
+        box-shadow: 0px 22px 3px #d9dee4;
+        border-radius: 30px;
+        background: transparent;
+        width: max-content;
+        height: max-content;
+    }
+    .about-section .about-content .about-main .about-img img {
+        width: 200px;
+        HEIGHT: 200px;
+        object-fit: cover;
+        border-radius: 30px;
+        /* display: none; */
+        box-shadow: 0px 12px 3px #bcc3cc;
+    }
+}
