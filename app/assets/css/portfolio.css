@@ -1,0 +1,213 @@
+.workflow .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.workflow .portfolio-content .port-item {
+    width: 50%;
+    margin-bottom: 6%;
+    background: white;
+    padding: 30px;
+    box-shadow: 1px 3px 3px #5d5e60;
+    border-radius: 7px;
+}
+
+.workflow .portfolio-content .porthead {
+    font-family: poppins;
+    padding: 20px;
+    background: #2b3138;
+    color: #fbfbfb;
+    position: relative;
+    top: -38px;
+    font-size: 34px;
+    box-shadow: 1px 3px 3px #5d5e60;
+    /* border-radius: 10px; */
+    font-weight: 600;
+    left: -102px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+    justify-content: center;
+    height: max-content;
+}
+
+.workflow .portfolio-content .portmain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 3%;
+}
+
+.workflow .portfolio-content .porthead img {
+    height: 400px;
+    object-fit: contain;
+    width: 400px;
+}
+
+.smashdash {
+    padding: 1px;
+    background: #97acc3;
+    position: relative;
+    transform: rotate(328deg);
+    height: 190px;
+    left: -50px;
+    box-shadow: 1px 1px 1px grey;
+    top: 74px;
+}
+
+.workflow .portfolio-content .port-item .portcontent h1 {
+    font-size: 50px;
+    color: #97acc3;
+    text-shadow: 2px 0px 8px #667b95, 1px 0px 2px;
+}
+
+.workflow .portfolio-content .port-item .portcontent .portword {
+    font-family: poppins;
+    text-align: inherit;
+    font-size: 19px;
+}
+
+.workflow .portfolio-content .port-item .portcontent .portstack {
+    /* padding: 10px; */
+    /* background: #d9dee4; */
+    /* width: max-content; */
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    /* color: white; */
+}
+
+.workflow .portfolio-content .port-item .portcontent .portstack img {
+    height: 26px;
+}
+
+.workflow .portfolio-content .port-item .portcontent .portsource {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.workflow .portfolio-content .port-item .portcontent .portsource a {
+    padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    background: #687f9a;
+    color: white;
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+}
+
+.workflow .portfolio-content .port-item .portcontent .portsource a i {
+    /* margin-right: 5%; */
+}
+
+@media screen and (max-width:888px) {
+    .workflow .portfolio-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .workflow .portfolio-content .port-item {
+        width: 97%;
+        margin-bottom: 6%;
+        background: white;
+        padding: 25px;
+        box-shadow: 1px 3px 3px #5d5e60;
+        border-radius: 7px;
+    }
+    .workflow .portfolio-content .porthead {
+        font-family: poppins;
+        padding: 10px;
+        background: #2b3138;
+        color: #fbfbfb;
+        position: relative;
+        top: 0px;
+        font-size: 34px;
+        box-shadow: 1px 3px 3px #5d5e60;
+        /* border-radius: 10px; */
+        font-weight: 600;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: max-content;
+        justify-content: center;
+        height: max-content;
+    }
+    .workflow .portfolio-content .portmain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: stretch;
+        margin-top: 3%;
+        align-items: center;
+        padding: 10px;
+    }
+    .workflow .portfolio-content .porthead img {
+        height: 250px;
+        object-fit: contain;
+        width: 350px;
+    }
+    .smashdash {
+        padding: 1px;
+        background: #97acc3;
+        position: relative;
+        transform: rotate(0deg) !important;
+        height: 67px;
+        left: 0px;
+        box-shadow: 1px 1px 1px grey;
+        top: 0px;
+        width: 1px;
+    }
+    .workflow .portfolio-content .port-item .portcontent h1 {
+        font-size: 43px;
+        color: #97acc3;
+        text-shadow: 2px 0px 8px #667b95, 1px 0px 2px;
+    }
+    .workflow .portfolio-content .port-item .portcontent .portword {
+        font-family: poppins;
+        text-align: inherit;
+        font-size: 14px;
+    }
+    .workflow .portfolio-content .port-item .portcontent .portstack {
+        /* padding: 10px; */
+        /* background: #d9dee4; */
+        /* width: max-content; */
+        /* border-style: solid; */
+        /* border-width: 1px; */
+        /* color: white; */
+    }
+    .workflow .portfolio-content .port-item .portcontent .portstack img {
+        height: 22px;
+    }
+    .workflow .portfolio-content .port-item .portcontent .portsource {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .workflow .portfolio-content .port-item .portcontent .portsource a {
+        padding: 7px;
+        border-radius: 20px;
+        border-style: solid;
+        background: #687f9a;
+        color: white;
+        font-family: poppins;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+    .workflow .portfolio-content .port-item .portcontent .portsource a i {
+        /* margin-right: 5%; */
+    }
+}

@@ -1,0 +1,273 @@
+.workpage {
+    padding-top: 10%;
+    padding-left: 4%;
+}
+
+.workpage .workflow {
+    margin-bottom: 4%;
+}
+
+.workpage .workflow .workflow-header {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    align-items: center;
+}
+
+.workpage .workflow .workflow-header .w-slash {
+    padding: 1px;
+    background: #96acc6;
+    width: 68px;
+    height: 1px;
+}
+
+.workpage .workflow .workflow-header .w-head {
+    font-family: Jost;
+    font-size: 45px;
+    font-weight: 600;
+    color: #7594b7;
+}
+
+.workpage .workflow .workflow-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 97%;
+    box-shadow: 0px 0px 3px grey;
+}
+
+.workpage .workflow .workflow-big {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 97%;
+}
+
+.workpage .workflow .workflow-content .workflow-item {
+    height: max-content;
+    margin: 2%;
+    /* background: white; */
+    padding: 20px 10px;
+    width: 16%;
+    border-radius: 4px;
+    /* box-shadow: 1px 3px 5px #77828e; */
+}
+
+.workpage .workflow .workflow-content .workflow-numbers {
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.workpage .workflow .workflow-content .workflow-numbers span {
+    height: 40px;
+    width: 40px;
+    border-radius: 100% !important;
+    border-style: solid;
+    border-radius: 1px;
+    color: #7594b7;
+    position: relative;
+    top: -10%;
+    font-family: monospace;
+    padding: 4px;
+    background: #52749a;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.workpage .workflow .workflow-content .workflow-item .img-brac-w {
+    /* background: white; */
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.workpage .workflow .workflow-content .workflow-item .img-brac-w img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.workpage .workflow .workflow-content .workflow-item .w-title {
+    font-family: Poppins;
+    color: #95abc6;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.workpage .workflow .workflow-content .workflow-item .w-desc {
+    font-size: 16px;
+    width: 100%;
+    font-family: Poppins;
+    color: #becad8;
+    /* font-size: 23px; */
+    font-weight: 500;
+    text-align: left;
+}
+
+.workpage .workflow .service-content {
+    background: white;
+    padding: 10px 34px;
+    width: 97%;
+    box-shadow: 0px 0px 3px grey;
+}
+
+.workpage .workflow .service-content .service-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.workpage .workflow .service-content .service-item .workflow-item {
+    width: 28%;
+    margin-top: 2%;
+}
+
+.joinbands {
+    padding: 1px;
+    width: 22%;
+    background: #52749a;
+    height: 1px;
+}
+
+.workpage .workflow .service-content .service-item .workflow-item .img-brac-w {}
+
+.workpage .workflow .service-content .service-item .workflow-item .img-brac-w img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.workpage .workflow .service-content .service-item .workflow-item .w-title {
+    font-size: 26px;
+    font-family: Poppins;
+    color: #95abc6;
+    font-weight: 600;
+}
+
+.workpage .workflow .service-content .service-item .workflow-item .w-desc {
+    font-size: 17px;
+    font-family: Poppins;
+    color: #b7c4d3;
+    font-weight: 600;
+    text-align: left;
+}
+
+@media screen and (max-width: 762px) {
+    .workpage .workflow .workflow-content {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .workpage .workflow .workflow-content .workflow-item {
+        width: 72%;
+    }
+    .workpage .workflow .workflow-content .workflow-numbers {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2%;
+        height: 100%;
+    }
+    .workpage .workflow .workflow-content .workflow-numbers span {
+        height: 40px;
+        width: 40px;
+        border-radius: 100% !important;
+        border-style: solid;
+        border-radius: 1px;
+        color: #7594b7;
+        position: relative;
+        top: -10%;
+        font-family: monospace;
+        padding: 4px;
+        background: #52749a;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .workpage .workflow .workflow-content .workflow-item .img-brac-w {
+        /* background: white; */
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .workpage .workflow .workflow-content .workflow-item .img-brac-w img {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+    }
+    .workpage .workflow .workflow-content .workflow-item .w-title {
+        font-family: Poppins;
+        color: #95abc6;
+        font-size: 23px;
+        font-weight: 600;
+    }
+    .workpage .workflow .workflow-content .workflow-item .w-desc {
+        font-size: 16px;
+        width: 100%;
+        font-family: Poppins;
+        color: #becad8;
+        /* font-size: 23px; */
+        font-weight: 500;
+        text-align: left;
+    }
+    .workpage .workflow .service-content {
+        background: white;
+        padding: 10px;
+        width: 97%;
+    }
+    .workpage .workflow .service-content .service-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .workpage .workflow .service-content .service-item .workflow-item {
+        width: max-content;
+        margin-top: 2%;
+    }
+    .joinbands {
+        padding: 1px;
+        height: 30vh;
+        background: #52749a;
+        /* height: 1px; */
+    }
+    .workpage .workflow .service-content .service-item .workflow-item .img-brac-w {}
+    .workpage .workflow .service-content .service-item .workflow-item .img-brac-w img {
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+    }
+    .workpage .workflow .service-content .service-item .workflow-item .w-title {
+        font-size: 24px;
+        font-family: Poppins;
+        color: #95abc6;
+        font-weight: 600;
+        width: 100%;
+    }
+    .workpage .workflow .service-content .service-item .workflow-item .w-desc {
+        font-size: 16px;
+        font-family: Poppins;
+        color: #b7c4d3;
+        font-weight: 600;
+    }
+}
