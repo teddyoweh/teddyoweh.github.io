@@ -1,95 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;900&family=La+Belle+Aurore&display=swap');
-.navbar {}
 
-.navbar .navbar-content .logo-content .logo img {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    transition: 0.3s;
-    cursor: pointer;
-}
+/* Import MOdules  stylesheets*/
 
-.navbar .navbar-content .logo-content .logo img:hover {
-    transition: 0.3s;
-    transform: rotate(180deg);
-}
+@import url('components/bootstrap.min.css');
+@import url('components/owl.carousel.min.css');
+@import url('components/magnific-popup.min.css');
+@import url('components/owl.theme.default.min.css');
 
-.home-text {
-    /* text-align: center; */
-    position: relative;
-    z-index: 2;
-    text-transform: capitalize;
-    font-family: 'Jost';
-    font-size: 23px;
-    color: #9db0c5;
-}
+/*Import Preloadder stylesheet*/
 
-.home-text h1 {
-    color: #ffffff;
-    font-size: 50px;
-    color: #ffffff;
-    line-height: 56px;
-    font-weight: 700;
-    margin: 0 0 20px;
-}
+@import url('components/preloader.css');
 
-.home-text p {
-    margin: 0;
-    overflow: hidden;
-}
+/* Import main stylesheets*/
 
-.home-text p span {
-    /* font-size: 40px; */
-    /* color: #ff2c45; */
-    /* font-weight: 700; */
-    display: inline-block;
-    /* line-height: 46px; */
-    display: none;
-}
+@import url('components/style.css');
+@import url('components/main.css');
 
-.home-text p span.text-in {
-    display: block;
-    animation: textIn .5s ease;
-}
+/* Import ABOUT PAGE stylesheet*/
 
-.home-text p span.text-out {
-    animation: textOut .5s ease;
-}
+@import url('components/about.css');
 
-.bigbox {
-    padding: 10px;
-    background: white;
-    width: 723px;
-    height: 178vh;
-    position: absolute;
-    right: -38%;
-    transform: rotate(39deg);
-    top: -71%;
-    /* transform: translateX(10px); */
-    border-radius: 69px;
-    box-shadow: -41px 31px 9px #cdd5e0;
-}
+/*Import CONTACT PAGE stylesheet*/
 
-@keyframes textIn {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}
+@import url('components/contact.css');
 
-@keyframes textOut {
-    0% {
-        transform: translateY(0%);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
-}
+/*Import SERVICES PAGE stylesheet*/
 
-@media screen and (max-width:767px) {
-    .bigbox {
-        display: none;
-    }
-}
+@import url('components/services.css');
+
+/*Import PORTFOLIO PAGE stylesheet*/
+
+@import url('components/portfolio.css');
