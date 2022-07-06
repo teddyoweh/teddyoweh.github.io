@@ -1,0 +1,93 @@
+.contacts-main {
+    padding: 10% 0% 5% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    position: relative;
+    left: 40%;
+}
+
+.contacts-main .contacts-header {
+    text-align: center;
+    color: #7a91ac;
+}
+
+.contacts-main .header-home_footer {
+    width: 100%;
+}
+
+.contacts-main .contacts-header h1 {}
+
+.contacts-main .contacts-header p {
+    font-size: 25px;
+    font-family: poppins;
+}
+
+.contacts-main .header-follow {
+    position: relative;
+    width: 100%;
+    right: 0;
+    display: block;
+    margin-top: 0;
+}
+
+.contacts-main .header-follow ul {}
+
+.contacts-main .header-follow ul li {}
+
+.contacts-main .header-follow ul li a {
+    background: #f3f5f7;
+    padding: 10px;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 14px;
+}
+
+.contacts-main .header-follow ul li a i {}
+
+@media screen and (max-width:900px) {
+    @media screen and (max-width: 880px) {
+        .bigbox {
+            display: none;
+        }
+        .contacts-main {
+            padding: 50% 0% 5% 3% !important;
+            left: 0% !important;
+        }
+        .contacts-main .contacts-header {
+            text-align: center;
+            color: #7a91ac;
+        }
+        .contacts-main .header-home_footer {
+            width: 100%;
+        }
+        .contacts-main .contacts-header h1 {
+            font-size: 35px;
+        }
+        .contacts-main .contacts-header p {
+            font-size: 20px;
+            font-family: poppins;
+        }
+        .contacts-main .header-follow {
+            position: relative;
+            width: 97%;
+            right: 0;
+            display: block;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        .contacts-main .header-follow ul li a {
+            height: 40px;
+            width: 40px;
+        }
+        .contacts-main .header-follow ul li a i {}
+        @media screen and (max-width:900px) {}
+    }
+}
